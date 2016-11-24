@@ -1,0 +1,27 @@
+.login-form {
+    line-height: 37px;
+    height: 37px;
+    margin: 5px 0;
+}
+
+.login-form>.am-u-sm-4 {
+    text-align: Justify;
+    text-justify: inter-ideograph;
+}
+
+.login-form>.am-u-sm-8>input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    height: 37px;
+    line-height: 37px;
+    width: 100%;
+    text
+}
+
+.login-form:last-of-type {
+    margin-top: 40px;
+}
+
+.am-btn-block {
+    margin: 0 auto;
+}
