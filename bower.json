@@ -1,0 +1,24 @@
+{
+  "name": "Blue",
+  "authors": [
+    "疯子乔"
+  ],
+  "description": "仓库管理系统",
+  "main": "index.html",
+  "keywords": [
+    "仓管",
+    "疯子乔"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "amazeui": "^2.7.2"
+  }
+}
