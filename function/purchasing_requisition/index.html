@@ -1,83 +1,207 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <!-- 全屏显示 开始设置-->
-        <meta name="full-screen" content="yes"/>
-        <meta name="x5-fullscreen" content="true"/>
-        <!-- 全屏显示 结束设置-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <title>采购申请-YunERP管理系统</title>
-        <!-- Set render engine for 360 browser -->
-        <meta name="renderer" content="webkit">
-        <!-- No Baidu Siteapp-->
-        <meta http-equiv="Cache-Control" content="no-siteapp"/>
-        <link rel="icon" type="image/png" href="../../img/common/favicon.png">
-        <!-- Add to homescreen for Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-        <!-- Add to homescreen for Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content=""/>
-        <link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
-        <meta name="msapplication-TileColor" content="#0e90d2">
-        <!-- 隐藏状态栏/设置状态栏颜色 -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-        <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
-        <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./purchasing_requisition.css">
-    </head>
-    <body>
-        <div class="am-g purchasing-requisition-title">
-            <div class="am-u-sm-3 go-back">
-                <a href="javascript:history.back(-1);">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="am-u-sm-6 am-text-center">
-                采购申请
-            </div>
-            <div class="am-u-sm-3 am-text-right profile_edit">
-                <a href="../profile_edit/profile_edit.html">
-                    <i class="fa fa-reply-all" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-        <div class="purchasing-requisition-form">
-            <ul>
-                <li>
-                    <label for="company">申请单位：</label>
-                    <input type="text" name="" value="广州市广州第五中学食堂" disabled>
-                </li>
-                <li>
-                    <label for="company">到货日期：</label>
-                    <input type="text" name="" value="" placeholder="到货日期" data-am-datepicker>
-                </li>
-                <li>
-                    <label for="company">申请备注：</label>
-                    <input type="text" name="" value="教育局领导来访，加菜。">
-                </li>
-            </ul>
-        </div>
 
-        <div class="goods-list-title">
-            <i class="fa fa-list-alt" aria-hidden="true"></i>申购商品
-        </div>
-        <ul class="goods-list">
-            <li></li>
-        </ul>
+	<head>
+		<meta charset="utf-8">
+		<!-- 全屏显示 开始设置-->
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<!-- 全屏显示 结束设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>采购申请-YunERP管理系统</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="" />
+		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!-- 隐藏状态栏/设置状态栏颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./purchasing_requisition.css">
+	</head>
 
-        <!--[if (gte IE 9)|!(IE)]><!-->
-        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
-        <!--<![endif]-->
-        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-        <script src="./purchasing_requisition.js"></script>
-    </body>
+	<body>
+		<div class="am-g purchasing-requisition-title">
+			<div class="am-u-sm-3 go-back">
+				<a href="javascript:history.back(-1);">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-6 am-text-center">
+				采购申请
+			</div>
+			<div class="am-u-sm-3 am-text-right profile_edit">
+				<a href="../profile_edit/profile_edit.html">
+					<i class="fa fa-reply-all" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		<div class="purchasing-requisition-form">
+			<ul>
+				<li>
+					<label for="company">申请单位：</label>
+					<input type="text" name="" value="广州市广州第五中学食堂" disabled>
+				</li>
+				<li>
+					<label for="company">到货日期：</label>
+					<input type="text" name="" value="" placeholder="到货日期" data-am-datepicker>
+				</li>
+				<li>
+					<label for="company">申请备注：</label>
+					<input type="text" name="" value="教育局领导来访，加菜。">
+				</li>
+			</ul>
+		</div>
+
+		<div class="goods-list-title">
+			<i class="fa fa-list-alt" aria-hidden="true"></i>申购商品
+			<button class="am-btn am-btn-success am-btn-xs am-fr add-good">
+				<i class="fa fa-plus" aria-hidden="true"></i>
+			</button>
+		</div>
+		<ul class="goods-list">
+			<li>
+				<div class="goods am-g">
+					<div class="am-input-group am-u-sm-8">
+						<button type="button" class="am-btn am-btn-default am-radius am-btn-xs  am-btn-block">
+							<span class="am-fl">
+								[SN8732]/增城迟菜心
+							</span>
+						</button>
+					</div>
+					<div class="am-btn-group am-u-sm-4">
+						<button type="button" class="am-btn am-btn-warning am-round am-btn-xs">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</button>
+						<button type="button" class="am-btn am-btn-danger am-round am-btn-xs">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-right">
+						<label for="count">数量：</label>
+					</div>
+					<div class="am-u-sm-9">
+						<input type="text" type="text" id="count" />
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-right">
+						<label for="remark">备注：</label>
+					</div>
+					<div class="am-u-sm-9">
+						<input type="text" type="text" id="remark" />
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<div class="goods am-g">
+					<div class="am-input-group am-u-sm-8">
+						<button type="button" class="am-btn am-btn-default am-radius am-btn-xs  am-btn-block">
+							<span class="am-fl">
+								[SN8732]/增城迟菜心
+							</span>
+						</button>
+					</div>
+					<div class="am-btn-group am-u-sm-4">
+						<button type="button" class="am-btn am-btn-warning am-round am-btn-xs">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</button>
+						<button type="button" class="am-btn am-btn-danger am-round am-btn-xs">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-right">
+						<label for="count">数量：</label>
+					</div>
+					<div class="am-u-sm-9">
+						<input type="text" type="text" id="count" />
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-right">
+						<label for="remark">备注：</label>
+					</div>
+					<div class="am-u-sm-9">
+						<input type="text" type="text" id="remark" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="goods am-g">
+					<div class="am-input-group am-u-sm-8">
+						<button type="button" class="am-btn am-btn-default am-radius am-btn-xs  am-btn-block">
+							<span class="am-fl">
+								[SN8732]/增城迟菜心
+							</span>
+						</button>
+					</div>
+					<div class="am-btn-group am-u-sm-4">
+						<button type="button" class="am-btn am-btn-warning am-round am-btn-xs">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</button>
+						<button type="button" class="am-btn am-btn-danger am-round am-btn-xs">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-right">
+						<label for="count">数量：</label>
+					</div>
+					<div class="am-u-sm-9">
+						<input type="text" type="text" id="count" />
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-3 am-text-right">
+						<label for="remark">备注：</label>
+					</div>
+					<div class="am-u-sm-9">
+						<input type="text" type="text" id="remark" />
+					</div>
+				</div>
+			</li>
+			<div class="am-g submit-form">
+				<div>
+					<button type="button" class="am-btn am-btn-warning am-btn-block">
+						<i class="fa fa-floppy-o" aria-hidden="true"></i>存为草稿
+					</button>
+				</div>
+				<div>
+					<button type="button" class="am-btn am-btn-success am-btn-block">
+						<i class="fa fa-check" aria-hidden="true"></i>
+						立即提交
+					</button>
+				</div>
+			</div>
+		</ul>
+
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+		<script src="./purchasing_requisition.js"></script>
+	</body>
+
 </html>

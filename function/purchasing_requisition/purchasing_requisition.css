@@ -1,43 +1,88 @@
 .purchasing-requisition-title {
-    margin-top: 5px;
-    height: 47px;
-    line-height: 37px;
-    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
-    font-size: 24px;
-    font-weight: bold;
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .purchasing-requisition-form {
-    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
 }
 
 .purchasing-requisition-form>ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .purchasing-requisition-form>ul>li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 37px;
-    height: 37px;
-    text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 37px;
+	height: 37px;
+	text-align: center;
 }
 
 .purchasing-requisition-form>ul>li>input {
-    border: none;
-    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	border: none;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
 }
 
 .goods-list-title {
-    font-weight: bold;
-    line-height: 30px;
-    padding-left: 10px;
-    background-color: rgba(106, 195, 134, 0.1);
-    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	font-weight: bold;
+	line-height: 30px;
+	padding-left: 10px;
+	background-color: rgba(106, 195, 134, 0.1);
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+}
+
+.goods-list-title>.add-good {
+	height: 30px;
+}
+
+.goods-list-title>.add-good>i.fa {
+	margin-right: 0;
 }
 
 .goods-list-title i.fa {
-    margin-right: 10px;
+	margin-right: 10px;
+}
+
+.goods-list {
+	margin: 0;
+	padding: 0;
+}
+
+.goods-list>li {
+	margin: 5px 0;
+	padding: 10px 5px 5px;
+	list-style: none;
+	line-height: 30px;
+	font-size: 14px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	background-color: rgba(193, 222, 226, 0.37);
+}
+
+.goods-list>li input {
+	width: 90%;
+	border: none;
+	border-bottom: 1px solid #C0C0C0;
+	background-color: rgba(193, 222, 226, 0.03);
+}
+
+.submit-form>div{
+	display: inline-block;
+	float: left;
+}
+.submit-form>div:nth-child(1){
+	width: 40%;
+}
+
+.submit-form>div:nth-child(2){
+	width: 60%;
+}
+.submit-form>div>button.am-btn>i.fa{
+	margin-right: 8px;
 }
