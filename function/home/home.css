@@ -1,0 +1,108 @@
+.home-title {
+    font-weight: bold;
+    height: 45px;
+    line-height: 35px;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    background-color: rgba(221, 221, 221, 0.26);
+}
+
+ul.show-item {
+    margin: 0;
+    padding: 0;
+}
+
+ul.show-item>li.item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    list-style: none;
+    height: 105px;
+    clear: both;
+    padding: 5px 10px;
+}
+
+ul.show-item>li:nth-child(4), ul.show-item>li:nth-child(5) {
+    height: 85px;
+}
+
+ul.show-item>li.item>.item-title {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #000;
+}
+
+ul.show-item>li.item>.item-title>.item-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul.show-item>li.item>.item-title>.item-name>i.fa {
+    margin-right: 5px;
+}
+
+ul.show-item>li.item>.item-title>.item-operate {
+    font-size: 14px;
+}
+
+ul.show-item>li.item>ul.item-info-list {
+    margin: 5px 0;
+    padding: 0;
+}
+
+ul.show-item>li.item>ul.item-info-list>li {
+    width: 25%;
+    border-right: 1px dashed #000;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+ul.show-item>li.item>ul.item-info-list>li>a {
+    color: #000;
+}
+
+ul.show-item>li.item>ul.item-info-list>li.am-text-success>a {
+    color: #5eb95e;
+}
+
+ul.show-item>li.item>ul.item-info-list>li.am-text-warning>a {
+    color: #F37B1D;
+}
+
+ul.show-item>li.item>ul.item-info-list>li.am-text-secondary>a {
+    color: #3bb4f2;
+}
+
+ul.show-item>li.item>ul.item-info-list>li.am-text-danger>a {
+    color: #dd514c;
+}
+
+ul.show-item>li.item>ul.item-info-list>li:last-of-type {
+    border-right: hidden;
+}
+
+.am-modal .am-modal-dialog {
+    box-shadow: 5px 5px 5px #737070;
+    border-radius: 2px;
+}
+
+.am-modal .am-alert p {
+    height: 15px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.am-modal .am-modal-footer {
+    background-color: green;
+}
+
+.am-modal .am-modal-footer span {
+    color: #fff;
+}
+
+.am-modal .am-modal-footer span i.fa {
+    margin-right: 5px;
+}
