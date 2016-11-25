@@ -3,7 +3,7 @@
     height: 45px;
     line-height: 35px;
     font-size: 24px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
     padding: 5px 0;
     background-color: rgba(221, 221, 221, 0.26);
 }
@@ -15,7 +15,7 @@ ul.show-item {
 
 ul.show-item>li.item {
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(177, 168, 168, 0.6);
     display: block;
     list-style: none;
     height: 105px;
@@ -30,7 +30,7 @@ ul.show-item>li:nth-child(4), ul.show-item>li:nth-child(5) {
 ul.show-item>li.item>.item-title {
     height: 35px;
     line-height: 35px;
-    border-bottom: 1px dashed #000;
+    border-bottom: 1px dashed rgba(177, 168, 168, 0.5);
 }
 
 ul.show-item>li.item>.item-title>.item-name {
@@ -53,7 +53,7 @@ ul.show-item>li.item>ul.item-info-list {
 
 ul.show-item>li.item>ul.item-info-list>li {
     width: 25%;
-    border-right: 1px dashed #000;
+    border-right: 1px dashed rgba(177, 168, 168, 0.5);
     margin: 0;
     padding: 0;
     display: inline-block;

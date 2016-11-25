@@ -1,0 +1,69 @@
+.profile-title {
+    margin-top: 5px;
+    height: 47px;
+    line-height: 37px;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-title .go-back a>i {
+    color: #e6e6e6;
+}
+
+.profile-title .profile_edit a>i {
+    color: #F37B1D;
+}
+
+.profile-title button.am-btn i.fa {
+    color: #fff;
+}
+
+.user-info ul {
+    margin: 10px auto;
+    padding: 0;
+    width: 80%;
+}
+
+.user-info {
+    height: 80px;
+    margin: 50px 0 80px;
+}
+
+.am-alert {
+    padding: .6rem 1.25rem;
+    background-color: #f5f5f5;
+}
+
+.user-info ul>li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+}
+
+.user-info ul>li:last-of-type {
+    text-indent: 20px;
+}
+
+.user-info ul>li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 1px sold #ccc;
+}
+
+#accordion>.am-panel>#do-not-say-1>.am-panel-bd {
+    font-size: 14px;
+}
+
+#accordion>.am-panel>#do-not-say-1>.am-panel-bd ul {
+    margin-bottom: 5px;
+}
+
+i.fa{
+  margin-right: 6px;
+  font-size: 18px;
+}
