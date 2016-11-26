@@ -65,8 +65,9 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
 				method: 'GET'
 			})
 			.success(function(data, header, config, status) {
+				$scope.categoryList = data.category.categoryList;
+				console.log("$scope.categoryList:",$scope.categoryList);
 				$scope.recentSearch = data.quickSerch.recentSerch;
-
 			})
 			.error(function(data, header, config, status) {
 				//处理响应失败

@@ -112,6 +112,15 @@ ul#goods-list>li.editEnable {
 	background-color: #fff;
 	text-align: left;
 } 
+#select-goods .am-modal-bd .categoryList{
+	margin: 0;
+	padding: 0;
+}
+#select-goods .am-modal-bd .categoryList>li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
 #select-goods .am-modal-bd input.am-form-field{
 	font-size: 14px;

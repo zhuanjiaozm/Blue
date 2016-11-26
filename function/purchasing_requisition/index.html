@@ -143,7 +143,14 @@
 
 						<div class="am-tabs-bd">
 							<div class="am-tab-panel am-active">
-								..分类查找
+								<div class="am-g">
+									<div class="am-u-sm-4">
+										<ul class="categoryList">
+											<li ng-repeat="category in categoryList" ng-bind="category.name"></li>
+										</ul>
+									</div>
+									<div class="am-u-sm-8">8</div>
+								</div>
 							</div>
 							<div class="am-tab-panel">
 								<div class="search">
@@ -157,7 +164,7 @@
 										很遗憾，没有搜索到"<b class="am-text-danger" ng-bind="selectGoodsSearchKeyword"></b>"相关的商品。
 									</div>
 								</div>
-								<div class="search-recently"  ng-if="recentSearch.length>0">
+								<div class="search-recently" ng-if="recentSearch.length>0">
 									最近搜索：
 									<a class="am-badge am-badge-secondary am-radius" ng-repeat="recentGood in recentSearch" ng-bind="recentGood.name" ng-click="selectedGoods(recentGood)"></a>
 								</div>
