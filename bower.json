@@ -19,6 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "amazeui": "^2.7.2"
+    "amazeui": "^2.7.2",
+    "angular": "^1.5.9"
   }
 }

@@ -1,0 +1,32 @@
+{
+	"context": [
+		{
+			"id": 421,
+			"good": {
+				"id": "SN2321",
+				"name": "增城迟白菜"
+			},
+			"accout": 3213,
+			"remark": "非常好的大白菜",
+			"editEnable": false
+		}, {
+			"id": 2,
+			"good": {
+				"id": "SN3411",
+				"name": "梅州大柚子"
+			},
+			"accout": 781,
+			"remark": "吃柚子的好季节",
+			"editEnable": false
+		}, {
+			"id": 3,
+			"good": {
+				"id": "SN9912",
+				"name": "土豆豆"
+			},
+			"accout": 5321,
+			"remark": "土豆有点发芽了",
+			"editEnable": false
+		}
+	]
+}

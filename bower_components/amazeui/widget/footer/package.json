@@ -271,7 +271,7 @@
     "options": {
       "modal": {
         "name": "弹出层",
-        "desc": "可选值：'true'(默认) - ；'false' - 不显示",
+        "desc": "可选值："true"(默认) - ；"false" - 不显示",
         "type": "select",
         "required": true,
         "default": true,

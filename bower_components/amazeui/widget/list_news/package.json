@@ -565,7 +565,7 @@
         "name": "缩略图位置",
         "desc": "缩略图相对于标题的位置",
         "type": "select",
-        "required": "!!(options.type === 'thumb')",
+        "required": "!!(options.type === "thumb")",
         "default": "bottom-left",
         "dataList": [
           {

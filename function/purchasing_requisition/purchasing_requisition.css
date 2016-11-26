@@ -72,17 +72,60 @@
 	background-color: rgba(193, 222, 226, 0.03);
 }
 
-.submit-form>div{
+ul#goods-list>li.editEnable {
+	background-color: #5eb95e;
+	color: #FFFFFF;
+}
+
+.submit-form>div {
 	display: inline-block;
 	float: left;
 }
-.submit-form>div:nth-child(1){
+
+.submit-form>div:nth-child(1) {
 	width: 40%;
 }
 
-.submit-form>div:nth-child(2){
+.submit-form>div:nth-child(2) {
 	width: 60%;
 }
-.submit-form>div>button.am-btn>i.fa{
+
+.submit-form>div>button.am-btn>i.fa {
 	margin-right: 8px;
+}
+
+.item-goods-info {
+	text-align: left;
+	padding-left: 3px;
+}
+
+#select-goods .am-modal-hd {
+	padding: 5px 10px 5px 10px;
+	background-color: #5eb95e;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#select-goods .am-modal-bd{
+	font-size: 14px;
+	padding: 0;
+	border-bottom: none;
+	background-color: #fff;
+	text-align: left;
+} 
+
+#select-goods .am-modal-bd input.am-form-field{
+	font-size: 14px;
+}
+
+#select-goods .am-modal-bd .search-recently>.am-badge{
+	margin: 3px 5px;
+}
+#select-goods .am-modal-bd .clear-search-recently{
+	padding-top: 5px;
+}
+#select-goods .am-modal-bd .clear-search-recently,
+#select-goods .am-modal-bd .search-recently,
+#select-goods .am-modal-bd .search-result{
+	border-top: 1px solid #C0C0C0;
+	margin-top: 5px;
 }
