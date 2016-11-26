@@ -143,14 +143,15 @@
 
 						<div class="am-tabs-bd">
 							<div class="am-tab-panel am-active">
-								<div class="am-g">
-									<div class="am-u-sm-4">
+									<div class="pull-left am-text-center" ng-init="currentIndex=0">
 										<ul class="categoryList">
-											<li ng-repeat="category in categoryList" ng-bind="category.name"></li>
+											<li ng-repeat="category in categoryList" ng-bind="category.name" ng-click="setCategory($index)" ng-class="{'current-index': currentIndex==$index}"></li>
 										</ul>
 									</div>
-									<div class="am-u-sm-8">8</div>
-								</div>
+									<div class="pull-right">
+										<a class="am-badge am-badge-success am-radius" ng-repeat="categoryGood in categoryList[currentIndex].children" ng-bind="categoryGood.name" ng-click="selectedGoods(categoryGood)"></a>
+									</div>
+								
 							</div>
 							<div class="am-tab-panel">
 								<div class="search">

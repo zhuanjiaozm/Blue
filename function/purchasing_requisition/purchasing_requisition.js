@@ -88,7 +88,12 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
 	$scope.clearSearchRecently=function(){
 		$scope.recentSearch=[];
 	}
-
+	//设置商品分类
+	$scope.setCategory=function(liIndex){
+		$scope.currentIndex=liIndex;
+	}
+	
+	
 	//选择商品  结束
 
 });
