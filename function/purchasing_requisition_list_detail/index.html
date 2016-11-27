@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- 全屏显示 开始设置-->
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<!-- 全屏显示 结束设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>采购清单-YunERP管理系统</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="" />
+		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!-- 隐藏状态栏/设置状态栏颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./purchasing_requisition_list_detail.css">
+	</head>
+
+	<body ">
+		<div class="am-g purchasing-requisition-list-detail-title ">
+			<div class="am-u-sm-2 go-back ">
+				<a href="javascript:history.back(-1); ">
+					<i class="fa fa-chevron-left " aria-hidden="true "></i>
+				</a>
+			</div>
+			<div class="am-u-sm-8 am-text-center ">
+				采购清单
+			</div>
+			<div class="am-u-sm-2 am-text-right">
+				
+			</div>
+		</div>
+		<div class="purchasing-requisition-form ">
+			<ul>
+				<li>
+					<label for="company ">申请单位：</label>
+					<input type="text " name=" " value="广州市广州第五中学食堂 " disabled>
+				</li>
+				<li>
+					<label for="company ">到货日期：</label>
+					<input type="text " name=" " value=" " placeholder="到货日期 " data-am-datepicker>
+				</li>
+				<li>
+					<label for="company ">申请备注：</label>
+					<input type="text " name=" " value="教育局领导来访，加菜。 ">
+				</li>
+			</ul>
+		</div>
+		
+		<div class="goods-list-title ">
+			<i class="fa fa-list-alt " aria-hidden="true "></i>申购商品
+			<button class="am-btn am-btn-success am-btn-xs am-fr add-good " id="add-good " ng-click="addGoods() " ng-if="added ">
+				<i class="fa fa-plus " aria-hidden="true "></i>
+			</button>
+			<button class="am-btn am-btn-success am-btn-xs am-fr add-good " id="add-good " ng-if="!added " disabled>
+				<i class="fa fa-plus " aria-hidden="true "></i>
+			</button>
+		</div>
+		
+		
+		<ul class="goods-list " id="goods-list ">
+			<!-- ngRepeat: item in goodList --><li ng-repeat="item in goodList " ng-class="{ 'editEnable': item.editEnable} " class="ng-scope ">
+				<div class="goods am-g ">
+					<div class="am-input-group am-u-sm-8 ">
+						<!-- ngIf: item.good.id --><button type="button " ng-click="selectGoods($index) " class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info ng-binding ng-scope " ng-bind=" '['+item.good.id + ']'+ '/'+ item.good.name " ng-if="item.good.id " ng-disabled="!item.editEnable " disabled="disabled ">[SN2321]/增城迟白菜</button><!-- end ngIf: item.good.id -->
+						<!-- ngIf: !item.good.id -->
+					</div>
+					
+				</div>
+				<div class="am-g ">
+					<div class="am-u-sm-4 am-text-right ">
+						<label for="count ">数量(斤)：</label>
+					</div>
+					<div class="am-u-sm-8 ">
+						<input type="text " value="1321 "  disabled="disabled ">
+					</div>
+				</div>
+				<div class="am-g ">
+					<div class="am-u-sm-4 am-text-right ">
+						<label for="remark ">商品备注：</label>
+					</div>
+					<div class="am-u-sm-8 ">
+						<input type="text "value="非常好的大白菜 " disabled="disabled ">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: item in goodList --><li ng-repeat="item in goodList " ng-class="{ 'editEnable': item.editEnable} " class="ng-scope ">
+				<div class="goods am-g ">
+					<div class="am-input-group am-u-sm-8 ">
+						<!-- ngIf: item.good.id --><button type="button " ng-click="selectGoods($index) " class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info ng-binding ng-scope " ng-bind=" '['+item.good.id + ']'+ '/'+ item.good.name " ng-if="item.good.id " ng-disabled="!item.editEnable " disabled="disabled ">[SN3411]/梅州大柚子</button><!-- end ngIf: item.good.id -->
+						<!-- ngIf: !item.good.id -->
+					</div>
+					
+				</div>
+				<div class="am-g ">
+					<div class="am-u-sm-4 am-text-right ">
+						<label for="count ">数量(斤)：</label>
+					</div>
+					<div class="am-u-sm-8 ">
+						<input type="text " value="1213 " disabled="disabled ">
+					</div>
+				</div>
+				<div class="am-g ">
+					<div class="am-u-sm-4 am-text-right ">
+						<label for="remark ">商品备注：</label>
+					</div>
+					<div class="am-u-sm-8 ">
+						<input type="text " value="吃柚子的好季节 " disabled="disabled ">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: item in goodList --><li ng-repeat="item in goodList " ng-class="{ 'editEnable': item.editEnable} " class="ng-scope ">
+				<div class="goods am-g ">
+					<div class="am-input-group am-u-sm-8 ">
+						<!-- ngIf: item.good.id --><button type="button " ng-click="selectGoods($index) " class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info ng-binding ng-scope " ng-bind=" '['+item.good.id + ']'+ '/'+ item.good.name " ng-if="item.good.id " ng-disabled="!item.editEnable " disabled="disabled ">[SN9912]/土豆豆</button><!-- end ngIf: item.good.id -->
+						<!-- ngIf: !item.good.id -->
+					</div>
+					
+				</div>
+				<div class="am-g ">
+					<div class="am-u-sm-4 am-text-right ">
+						<label for="count ">数量(斤)：</label>
+					</div>
+					<div class="am-u-sm-8 ">
+						<input type="text " id="count " ng-model="item.accout " ng-disabled="!item.editEnable " class="ng-pristine ng-untouched ng-valid ng-not-empty " disabled="disabled ">
+					</div>
+				</div>
+				<div class="am-g ">
+					<div class="am-u-sm-4 am-text-right ">
+						<label for="remark ">商品备注：</label>
+					</div>
+					<div class="am-u-sm-8 ">
+						<input type="text " value="土豆有点发芽了 " disabled="disabled ">
+					</div>
+				</div>
+			</li><!-- end ngRepeat: item in goodList -->
+		</ul>
+		<div class="am-btn-group am-btn-group-justify ">
+		  	<a class="am-btn am-btn-danger " role="button"  data-am-modal="{target: '#my-prompt'}">
+		  		<i class="fa fa-times " aria-hidden="true"></i>
+		  		驳回
+		  	</a>
+		  	<a class="am-btn am-btn-success " role="button" data-am-modal="{target: '#my-confirm'}">
+		  		<i class="fa fa-check" aria-hidden="true"></i>
+		  		通过
+		  	</a>  		
+		</div>
+		<div class="am-modal am-modal-confirm " tabindex="-1 " id="my-confirm">
+		  <div class="am-modal-dialog ">
+		    <div class="am-modal-hd ">请确认</div>
+		    <div class="am-modal-bd ">
+		      	你确定要<span class="am-text-success ">通过</span>	这条申请记录吗？
+		    </div>
+		    <div class="am-modal-footer ">
+		      <span class="am-modal-btn " data-am-modal-cancel>取消</span>
+		      <span class="am-modal-btn " data-am-modal-confirm>确定</span>
+		    </div>
+		  </div>
+		</div>
+		
+		
+		<div class="am-modal am-modal-prompt " tabindex="-1 " id="my-prompt">
+		  <div class="am-modal-dialog ">
+		    <div class="am-modal-hd ">请输入选择或输入驳回理由</div>
+		    <div class="am-modal-bd " style="text-align: left;">
+		    	<ul>
+		    		<li>
+		    			A、采购数量有误，重新检查
+		    		</li>
+		    		<li>
+		    			B、使用日期设置有误
+		    		</li>
+		    		<li>
+		    			C、其他原因<input type="text " class="am-modal-prompt-input ">
+		    		</li>
+		    	</ul> 
+		    </div>
+		    <div class="am-modal-footer ">
+		      <span class="am-modal-btn " data-am-modal-cancel>取消</span>
+		      <span class="am-modal-btn " data-am-modal-confirm>提交</span>
+		    </div>
+		  </div>
+		</div>
+		
+
+
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="../../bower_components/jquery/dist/jquery.min.js "></script>
+		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js "></script>		
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js "></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js "></script> <script src="assets/js/amazeui.ie8polyfill.min.js "></script> <![endif]-->
+		<script src="./purchasing_requisition_list_detail.js "></script>
+	</body>
+
+</html>

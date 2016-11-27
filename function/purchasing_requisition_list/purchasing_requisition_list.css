@@ -33,3 +33,7 @@
 .admin-sidebar-list>li.am-panel a{
 	color: #000;
 }
+.am-offcanvas-bar {
+	width: 180px;
+	opacity: 0.93;
+}

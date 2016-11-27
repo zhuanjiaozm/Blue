@@ -11,5 +11,8 @@ app.controller('purchasing_requisition_list-controller', function($scope, $http)
 		.error(function(data, header, config, status) {
 			//处理响应失败
 		});
+	$scope.changeLocation=function(){
+		window.location.href="../purchasing_requisition_list_detail/index.html"; 
+	}
 });
 angular.bootstrap(document, ['app']);
