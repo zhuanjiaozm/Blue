@@ -1,0 +1,132 @@
+{
+	"data": [
+		{
+			"id": 231,
+			"arriveTime": "2016-11-20",
+			"goodsList": [
+				{
+					"id": 1231,
+					"department": {
+						"id": 13232,
+						"name": "八旗聚餐"
+					},
+					"requestTime": "2016-12-13",
+					"goodsArray": [
+						{
+							"goods": {
+								"id": 21341,
+								"name": "大白菜"
+							},
+							"account": 231
+						}, {
+							"goods": {
+								"id": 21342,
+								"name": "二小白菜"
+							},
+							"account": 1234
+						}, {
+							"goods": {
+								"id": 21343,
+								"name": "大大的土豆"
+							},
+							"account": 812
+						}
+					]
+				}, {
+					"id": 1232,
+					"department": {
+						"id": 13232,
+						"name": "化工大学"
+					},
+					"requestTime": "2016-12-13",
+					"goodsArray": [
+						{
+							"goods": {
+								"id": 21341,
+								"name": "鸡肉"
+							},
+							"account": 231
+						}, {
+							"goods": {
+								"id": 21342,
+								"name": "鱼肉"
+							},
+							"account": 1234
+						}, {
+							"goods": {
+								"id": 21343,
+								"name": "五花肉"
+							},
+							"account": 812
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 231,
+			"arriveTime": "2016-11-20",
+			"goodsList": [
+				{
+					"id": 1231,
+					"department": {
+						"id": 13232,
+						"name": "八旗聚餐"
+					},
+					"requestTime": "2016-12-13",
+					"goodsArray": [
+						{
+							"goods": {
+								"id": 21341,
+								"name": "大白菜"
+							},
+							"account": 231
+						}, {
+							"goods": {
+								"id": 21342,
+								"name": "二小白菜"
+							},
+							"account": 1234
+						}, {
+							"goods": {
+								"id": 21343,
+								"name": "大大的土豆"
+							},
+							"account": 812
+						}
+					]
+				}, {
+					"id": 1232,
+					"department": {
+						"id": 13232,
+						"name": "化工大学"
+					},
+					"requestTime": "2016-12-13",
+					"goodsArray": [
+						{
+							"goods": {
+								"id": 21341,
+								"name": "鸡肉"
+							},
+							"account": 231
+						}, {
+							"goods": {
+								"id": 21342,
+								"name": "鱼肉"
+							},
+							"account": 1234
+						}, {
+							"goods": {
+								"id": 21343,
+								"name": "五花肉"
+							},
+							"account": 812
+						}
+					]
+				}
+			]
+		}
+	],
+	"message": "",
+	"errorCode": ""
+}

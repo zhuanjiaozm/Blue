@@ -1,0 +1,35 @@
+.purchasing-requisition-list-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	font-size: 24px;
+	font-weight: bold;
+}
+.admin-sidebar-list>li.am-panel{
+	text-indent: 5px;
+}
+.admin-sidebar-list>li.am-panel a{
+	    background-color: #d8d823;
+}
+.admin-sidebar-list>li.am-panel .am-list>li{
+	border: 1px solid #008000;
+	margin: 5px;
+	border-radius: 1px;
+}
+
+.admin-sidebar-list>li.am-panel .am-list>li>ul{
+	margin: 0 0 5px;
+	padding-left: 30px;
+}
+.admin-sidebar-list>li.am-panel .am-list>li>ul>li{
+	list-style: none;
+}
+.admin-sidebar-list>li.am-panel .am-list>li .fa{
+	font-size: 14px;
+	margin-right: 5px;
+}
+.admin-sidebar-list>li.am-panel a i.fa,
+.admin-sidebar-list>li.am-panel a{
+	color: #000;
+}
