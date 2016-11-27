@@ -143,15 +143,15 @@
 
 						<div class="am-tabs-bd">
 							<div class="am-tab-panel am-active">
-									<div class="pull-left am-text-center" ng-init="currentIndex=0">
-										<ul class="categoryList">
-											<li ng-repeat="category in categoryList" ng-bind="category.name" ng-click="setCategory($index)" ng-class="{'current-index': currentIndex==$index}"></li>
-										</ul>
-									</div>
-									<div class="pull-right">
-										<a class="am-badge am-badge-success am-radius" ng-repeat="categoryGood in categoryList[currentIndex].children" ng-bind="categoryGood.name" ng-click="selectedGoods(categoryGood)"></a>
-									</div>
-								
+								<div class="pull-left am-text-center" ng-init="currentIndex=0">
+									<ul class="categoryList">
+										<li ng-repeat="category in categoryList" ng-bind="category.name" ng-click="setCategory($index)" ng-class="{'current-index': currentIndex==$index}"></li>
+									</ul>
+								</div>
+								<div class="pull-right">
+									<a class="am-badge am-badge-success am-radius" ng-repeat="categoryGood in categoryList[currentIndex].children" ng-bind="categoryGood.name" ng-click="selectedGoods(categoryGood)"></a>
+								</div>
+
 							</div>
 							<div class="am-tab-panel">
 								<div class="search">
@@ -170,7 +170,10 @@
 									<a class="am-badge am-badge-secondary am-radius" ng-repeat="recentGood in recentSearch" ng-bind="recentGood.name" ng-click="selectedGoods(recentGood)"></a>
 								</div>
 								<div class="clear-search-recently am-text-right" ng-if="recentSearch.length>0">
-									<button type="button" class="am-btn am-btn-danger am-round am-btn-xs" ng-click="clearSearchRecently()">清空最近搜索</button>
+									<!--<button type="button" class="am-btn am-btn-danger am-round am-btn-xs" ></button>-->
+									<i ng-click="clearSearchRecently()" class="am-text-danger">
+										<i class="fa fa-trash-o" aria-hidden="true"></i>清空最近搜索
+									</i>
 								</div>
 							</div>
 

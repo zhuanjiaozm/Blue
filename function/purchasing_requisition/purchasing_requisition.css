@@ -147,9 +147,11 @@ ul#goods-list>li.editEnable {
 	border-right: 1px solid rgba(221, 221, 221, 0.57);
 	padding-right: 3px;
 }
+
 #select-goods .am-modal-bd .am-tab-panel .pull-right {
 	width: 69%;
 }
+
 #select-goods .am-modal-bd .am-tab-panel .pull-right .am-badge,
 #select-goods .am-modal-bd .search-recently>.am-badge {
 	margin: 3px 5px;
@@ -164,4 +166,9 @@ ul#goods-list>li.editEnable {
 #select-goods .am-modal-bd .search-result {
 	border-top: 1px solid #C0C0C0;
 	margin-top: 5px;
+}
+
+.am-modal-alert>.am-modal-dialog {
+	width: 95%;
+	margin-left: -4px;
 }
