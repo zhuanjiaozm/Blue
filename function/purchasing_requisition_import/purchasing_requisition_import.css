@@ -1,0 +1,88 @@
+.purchasing_requisition_import-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.purchasing_requisition_import-container {
+	padding: 2px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd ul.template-library {
+	margin: 0;
+	padding: 0;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd ul.template-library>li {
+	border: 1px #5eb95e solid;
+	margin: 5px;
+	list-style: none;
+	padding: 5px;
+	border-radius: 1px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd ul.template-library>li>div.template-name {
+	margin: 5px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd ul.template-library>li>div.template-name>button>i.fa {
+	margin-right: 5px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd ul.template-library>li>ul {
+	margin: 5px;
+	font-size: 14px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list {
+	margin: 0;
+	padding: 0;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li {
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+	border: 1px #5eb95e solid;
+	border-radius: 1px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li .am-btn,
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd ul.template-library>li .am-btn {
+	box-shadow: -2px 2px 9px 1px rgba(7, 17, 27, 0.1);
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li i.fa {
+	margin-right: 5px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li .purchasing-goods-operate {
+	border-left: 1px solid rgb(177, 168, 168);
+	border-bottom: 1px solid rgb(177, 168, 168);
+	padding: 2px 8px;
+	margin-top: -5px;
+	margin-right: -5px;
+	border-radius: 0 0 0 3px;
+	background-color: rgba(7, 17, 27, 0.1);
+	box-shadow: -2px 2px 9px 1px rgba(7, 17, 27, 0.1);
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li .purchasing-goods-operate>i:first-of-type {
+	padding-right: 5px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li .purchasing-goods-operate>i:last-of-type {
+	border-left: 1px solid rgba(130, 117, 117, 0.33);
+	padding-left: 10px;
+}
+
+.purchasing_requisition_import-container>.am-tabs>.am-tabs-bd .purchasing-requisition-list>li>.purchasingGoods {
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+	border-bottom: 1px dashed rgba(177, 168, 168, 0.5);
+}

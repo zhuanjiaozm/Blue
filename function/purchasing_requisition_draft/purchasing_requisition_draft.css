@@ -17,6 +17,7 @@
 	padding: 5px;
 	list-style: none;
 	border: 1px solid rgb(177, 168, 168);
+	border-radius: 1px;
 }
 
 .purchasing-requisition-list>li i.fa {

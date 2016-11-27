@@ -1,9 +1,328 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js">
+
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta charset="utf-8">
+		<!-- 全屏显示 开始设置-->
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<!-- 全屏显示 结束设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>批量导入-YunERP管理系统</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="" />
+		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!-- 隐藏状态栏/设置状态栏颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./purchasing_requisition_import.css">
 	</head>
+
 	<body>
+		<div class="am-g purchasing_requisition_import-title">
+			<div class="am-u-sm-3 go-back">
+				<a href="javascript:history.back(-1);">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-6 am-text-center">
+				批量导入
+			</div>
+			<div class="am-u-sm-3 am-text-right profile_edit">
+				<a href="../profile_edit/profile_edit.html">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		<div class="purchasing_requisition_import-container">
+			<div class="am-tabs" id="doc-my-tabs">
+				<ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
+					<li class="am-active">
+						<a href="">模板库</a>
+					</li>
+					<li>
+						<a href="">复制采购单</a>
+					</li>
+				</ul>
+				<div class="am-tabs-bd">
+					<div class="am-tab-panel am-active">
+						<ul class="template-library">
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">八月蔬菜</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										大白菜、西洋菜、番茄
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">
+										校庆聚餐
+									</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										<b>蔬菜：</b> 土豆、豆芽、海带
+									</li>
+									<li>
+										<b>肉类：</b> 五花肉、牛肉、排骨
+									</li>
+									<li>
+										<b>酒水：</b> 二锅头、红酒、茅台
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">八月蔬菜</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										大白菜、西洋菜、番茄
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">
+										校庆聚餐
+									</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										<b>蔬菜：</b> 土豆、豆芽、海带
+									</li>
+									<li>
+										<b>肉类：</b> 五花肉、牛肉、排骨
+									</li>
+									<li>
+										<b>酒水：</b> 二锅头、红酒、茅台
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">八月蔬菜</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										大白菜、西洋菜、番茄
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">
+										校庆聚餐
+									</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										<b>蔬菜：</b> 土豆、豆芽、海带
+									</li>
+									<li>
+										<b>肉类：</b> 五花肉、牛肉、排骨
+									</li>
+									<li>
+										<b>酒水：</b> 二锅头、红酒、茅台
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">八月蔬菜</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										大白菜、西洋菜、番茄
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div class="template-name">
+									<i class="fa fa-id-card-o am-text-success" aria-hidden="true"></i>
+									<label for="" class="am-text-success">
+										校庆聚餐
+									</label>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<ul>
+									<li>
+										<b>蔬菜：</b> 土豆、豆芽、海带
+									</li>
+									<li>
+										<b>肉类：</b> 五花肉、牛肉、排骨
+									</li>
+									<li>
+										<b>酒水：</b> 二锅头、红酒、茅台
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="am-tab-panel">
+						<ul class="purchasing-requisition-list">
+							<!-- ngRepeat: purchasingRequisition in purchasingRequisitionList -->
+							<li ng-repeat="purchasingRequisition in purchasingRequisitionList" class="ng-scope">
+								<div>
+									<i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
+									<small>创建时间:</small>
+									<i><span ng-bind="purchasingRequisition.creatTime" class="ng-binding">2016-11-23</span></i>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<!-- ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									1.<label ng-bind="purchasingGoods.name" class="ng-binding">大白菜</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">3213斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									2.<label ng-bind="purchasingGoods.name" class="ng-binding">花椰菜</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">3211斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									3.<label ng-bind="purchasingGoods.name" class="ng-binding">牛肉</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">321斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									4.<label ng-bind="purchasingGoods.name" class="ng-binding">鱼肉</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">213斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+							</li>
+							<!-- end ngRepeat: purchasingRequisition in purchasingRequisitionList -->
+							<li ng-repeat="purchasingRequisition in purchasingRequisitionList" class="ng-scope">
+								<div>
+									<i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
+									<small>创建时间:</small>
+									<i><span ng-bind="purchasingRequisition.creatTime" class="ng-binding">2016-11-24</span></i>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<!-- ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									1.<label ng-bind="purchasingGoods.name" class="ng-binding">大白菜</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">9783斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									2.<label ng-bind="purchasingGoods.name" class="ng-binding">豆芽</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">789斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									3.<label ng-bind="purchasingGoods.name" class="ng-binding">土豆</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">112斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									4.<label ng-bind="purchasingGoods.name" class="ng-binding">大米</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">267斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+							</li>
+							<!-- end ngRepeat: purchasingRequisition in purchasingRequisitionList -->
+							<li ng-repeat="purchasingRequisition in purchasingRequisitionList" class="ng-scope">
+								<div>
+									<i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
+									<small>创建时间:</small>
+									<i><span ng-bind="purchasingRequisition.creatTime" class="ng-binding">2016-11-25</span></i>
+									<button type="button" class="am-btn am-btn-success am-radius am-btn-xs pull-right">
+										<i class="fa fa-check" aria-hidden="true"></i>导入
+									</button>
+								</div>
+								<!-- ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									1.<label ng-bind="purchasingGoods.name" class="ng-binding">花椰菜</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">3211斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									2.<label ng-bind="purchasingGoods.name" class="ng-binding">海带</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">453斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									3.<label ng-bind="purchasingGoods.name" class="ng-binding">红辣椒</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">1213斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+								<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods ng-binding ng-scope">
+									4.<label ng-bind="purchasingGoods.name" class="ng-binding">大白菜</label>:
+									<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success ng-binding">765斤</span>
+								</div>
+								<!-- end ngRepeat: purchasingGoods in purchasingRequisition.goodsList -->
+							</li>
+							<!-- end ngRepeat: purchasingRequisition in purchasingRequisitionList -->
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+		<script src="./purchasing_requisition_import.js"></script>
 	</body>
+
 </html>

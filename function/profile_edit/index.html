@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- 全屏显示 开始设置-->
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<!-- 全屏显示 结束设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>个人信息-YunERP管理系统</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="" />
+		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!-- 隐藏状态栏/设置状态栏颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./profile.css">
+	</head>
+
+	<body>
+		<div class="am-g profile-title">
+			<div class="am-u-sm-3 go-back">
+				<a href="javascript:history.back(-1);">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-6 am-text-center">
+				个人信息
+			</div>
+			<div class="am-u-sm-3 am-text-right profile_edit">
+				<a href="../profile_edit/profile_edit.html">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		<div class="user-info">
+			<ul>
+				<li>
+					<a href="">
+						<img src="../../img/profile/AAMd53ts194.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<div>
+						姓名：<span>张三</span>
+					</div>
+					<div>
+						账号：<span>121232213</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="am-alert am-alert-secondary" data-am-alert>
+			<p><i class="fa fa-key" aria-hidden="true"></i>修改密码</p>
+		</div>
+
+		<div class="am-panel-group" id="accordion">
+			<div class="am-panel am-panel-default">
+				<div class="am-panel-hd">
+					<h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>系统通知
+                        <strong class="am-fr am-text-success">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </strong>
+                    </h4>
+				</div>
+				<div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
+					<div class="am-panel-bd">
+						<ul>
+							<li class="am-text-truncate">
+								1.明天（2016-11-26）有雷雨预报，请注意<span class="am-text-danger am-kai">出行安全</span>。
+							</li>
+							<li class="am-text-truncate">
+								2.为保证您的账户安全，请您不定期<span class="am-text-success am-kai">修改密码</span>。
+							</li>
+							<li class="am-text-truncate">
+								3.陕西省国土资源厅厅长王卫华介绍，本次发现的天坑主要有原始程度高、科考价值大、开发前景好这3项主要特点。
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-alert am-alert-secondary" data-am-alert>
+			<p><i class="fa fa-envelope-o" aria-hidden="true"></i>意见反馈</p>
+		</div>
+		<div class="am-alert am-alert-secondary" data-am-alert>
+			<p><i class="fa fa-skyatlas" aria-hidden="true"></i>关于
+				<span class="am-fr am-text-danger">
+                    <i>1.0</i>
+                </span>
+			</p>
+		</div>
+
+		<!--在这里编写你的代码-->
+
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+		<script src="./profile.js"></script>
+	</body>
+
+</html>
