@@ -1,0 +1,52 @@
+.purchasing-requisition-draft-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.purchasing-requisition-list {
+	margin: 0;
+	padding: 0;
+}
+
+.purchasing-requisition-list>li {
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+	border: 1px solid rgb(177, 168, 168);
+}
+
+.purchasing-requisition-list>li i.fa {
+	margin-right: 5px;
+}
+
+.purchasing-requisition-list>li .purchasing-goods-operate {
+	border-left: 1px solid rgb(177, 168, 168);
+	border-bottom: 1px solid rgb(177, 168, 168);
+	padding: 2px 8px;
+	margin-top: -5px;
+	margin-right: -5px;
+	border-radius: 0 0 0 3px;
+	background-color: rgba(7, 17, 27, 0.1);
+	box-shadow: -2px 2px 9px 1px rgba(7, 17, 27, 0.1);
+}
+
+.purchasing-requisition-list>li .purchasing-goods-operate>i:first-of-type {
+	padding-right: 5px;
+}
+
+.purchasing-requisition-list>li .purchasing-goods-operate>i:last-of-type {
+	border-left: 1px solid rgba(130, 117, 117, 0.33);
+	padding-left: 10px;
+}
+
+.purchasing-requisition-list>li>.purchasingGoods {
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 28px;
+	height: 28px;
+	border-bottom: 1px dashed rgba(177, 168, 168, 0.5);
+}

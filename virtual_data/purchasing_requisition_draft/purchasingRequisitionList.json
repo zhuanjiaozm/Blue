@@ -1,0 +1,75 @@
+{
+	"data": [
+		{
+			"id": 1111,
+			"creatTime": "2016-11-23",
+			"goodsList": [
+				{
+					"id": 121,
+					"name": "大白菜",
+					"account": 3213
+				}, {
+					"id": 122,
+					"name": "花椰菜",
+					"account": 3211
+				}, {
+					"id": 123,
+					"name": "牛肉",
+					"account": 321
+				}, {
+					"id": 124,
+					"name": "鱼肉",
+					"account": 213
+				}
+			]
+		},
+		{
+			"id": 1112,
+			"creatTime": "2016-11-24",
+			"goodsList": [
+				{
+					"id": 121,
+					"name": "大白菜",
+					"account": 9783
+				}, {
+					"id": 125,
+					"name": "豆芽",
+					"account": 789
+				}, {
+					"id": 126,
+					"name": "土豆",
+					"account": 112
+				}, {
+					"id": 127,
+					"name": "大米",
+					"account": 267
+				}
+			]
+		},
+		{
+			"id": 1113,
+			"creatTime": "2016-11-25",
+			"goodsList": [
+				{
+					"id": 122,
+					"name": "花椰菜",
+					"account": 3211
+				}, {
+					"id": 128,
+					"name": "海带",
+					"account": 453
+				}, {
+					"id": 129,
+					"name": "红辣椒",
+					"account": 1213
+				},{
+					"id": 121,
+					"name": "大白菜",
+					"account": 765
+				}
+			]
+		}
+	],
+	"message": "",
+	"errorCode": ""
+}
