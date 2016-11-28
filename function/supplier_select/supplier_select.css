@@ -1,0 +1,44 @@
+i.fa {
+	margin-right: 5px;
+}
+
+button.am-btn>i.fa {
+	margin-right: 0;
+}
+
+.supplier-select-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.search {
+	margin: 5px;
+	height: 25px;
+	clear: both;
+}
+
+.search>.search-input {
+	width: 73%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+.search>.search-button {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+.am-list>li{
+	padding-left: 15px;
+}
+div.submit{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}

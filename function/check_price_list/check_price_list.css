@@ -75,3 +75,8 @@ ul.goods-list>li>div>input {
 ul.goods-list>li>div>button {
     margin-top: 5px;
 }
+div.submit{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
