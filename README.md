@@ -10,4 +10,14 @@
    ./virtual_data/    用于前端测试时的json文件存放位置，其子目录以对应功能的名称命名
 
 #2.项目发布
-    将./*文件上传至web服务器的发布目录下，对应到本文件路径即可 例如登陆即是：www.xxxx.com/function/login/index.html
+    将./*文件上传至web服务器的发布目录下，对应到本文件路径即可 例如登陆即是：www.fengziqiao.xyz/function/login/index.html
+
+#3.页面和文件
+
+>登录
+*[登录](http://www.fengziqiao.xyz/function/login/index.html)<http://www.fengziqiao.xyz/function/login/index.html>
+*[个人信息](http://www.fengziqiao.xyz/function/profile/index.html)<http://www.fengziqiao.xyz/function/profile/index.html>
+
+
+>有功能按钮无版面 统计
+*编辑个人信息
