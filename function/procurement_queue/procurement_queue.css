@@ -1,0 +1,42 @@
+.procurement-queue-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.procurement-title {
+	padding: .6rem 1.25rem;
+	background-color: #f5f5f5;
+	border-bottom: 1px #ddd solid;
+	border-top: 1px #ddd solid;
+	font-size: 14px;
+}
+
+.am-list {
+	border-top: none;
+	margin: 0;
+}
+
+.am-list>li {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: rgba(221, 221, 221, 0.58);
+}
+
+.am-list>li:first-of-type {
+	border-top: none;
+}
+
+.am-list>li>div .am-badge {
+	margin: 0 5px;
+}
+
+.am-list>li>div.goods-name {
+	height: 37px;
+	line-height: 37px;
+	border-bottom: 1px dashed #b1a8a8;
+}
