@@ -1,0 +1,55 @@
+.procurement-order-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.goods-info {
+	padding-top: 5px;
+	border-bottom: 1px solid #D1D1D1;
+	padding-bottom: 10px;
+	background-color: rgba(221, 221, 221, 0.58);
+}
+
+.the-form>div {
+	line-height: 35px;
+	height: 35px;
+}
+
+.the-form>div>strong {
+	display: inline-block;
+	float: left;
+	width: 30%;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 35px;
+	height: 35px;
+}
+.the-form>div>.am-checkbox-con{
+	display: inline-block;
+	float: right;
+	width: 70%;
+	line-height: 35px;
+	height: 35px;
+}
+.the-form>div>input[type=checkbox] {
+	border: none;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	line-height: 35px;
+	height: 35px;
+}
+.the-form>div>.am-checkbox-con>label.am-checkbox{
+	margin-top: 8px;
+}
+.the-form>div.price>input{
+	width: 50px;
+	margin-top: -5px;
+}
+div.submit{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
