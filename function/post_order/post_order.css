@@ -1,0 +1,44 @@
+.post-order-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.storage-select {
+	margin: 5px 0;
+}
+
+.storage-select>div:first-of-type {
+	text-align: right;
+	height: 37px;
+	line-height: 37px;
+}
+.storage-select>div:last-of-type .am-selected{
+	width: 90%;
+} 
+.am-table .am-checkbox{
+	margin: 0;
+	
+}
+.operate .left-operate{
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+.operate .right-operate{
+	width: 60%;
+	display: inline-block;
+	float: right;
+}
+.am-tabs-bd .am-tab-panel.am-active{
+	padding: 5px;
+}
+.am-btn i.fa{
+	margin-right: 5px;
+}
+.am-modal-dialog .am-modal-hd{
+	border-bottom: 1px solid #dedede;
+}
