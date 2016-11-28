@@ -1,0 +1,98 @@
+.registration-requisitioned-items-title {
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.search>.am-g {
+	margin: 5px 0;
+}
+
+.search>.am-g>span {
+	width: 30%;
+	display: inline-block;
+	float: left;
+	text-align: right;
+	height: 37px;
+	line-height: 37px;
+}
+
+.search>.am-g>span i.fa {
+	margin-right: 5px;
+}
+
+.search>.am-g>input {
+	border: none;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	height: 37px;
+	width: 200px;
+}
+
+.title {
+	height: 31px;
+	line-height: 31px;
+	font-weight: bold;
+	padding-left: 10px;
+	background-color: rgba(106, 195, 134, 0.1);
+	border-bottom: none;
+}
+
+.title i.fa {
+	margin-right: 5px;
+}
+.title .am-btn i.fa {
+	margin-right: 0;
+}
+.title .am-btn {
+	height: 31px;
+}
+
+.goods-list {
+	margin: 0;
+}
+
+.goods-list li {
+	margin: 0;
+	padding: 5px;
+	border-top: none;
+}
+.goods-list li:first-of-type{
+	border-top: 1px solid #e6e6e6;
+}
+.goods-list>li>div {
+	margin: 5px;
+	clear: both;
+	height: 37px;
+}
+
+.goods-list li div span.attr {
+	display: inline-block;
+	width: 20%;
+	float: left;
+	text-align: center;
+	height: 37px;
+	line-height: 37px;
+	margin: 5px 0;
+}
+
+.goods-list>li>div>.right-con {
+	width: 80%;
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
+}
+
+.goods-list>li>div>.am-btn {
+	margin-top: 5px;
+}
+
+.goods-list>li>div>.right-con>input {
+	height: 37px;
+	line-height: 37px;
+	margin-top: 5px;
+	border: none;
+	width: 200px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
