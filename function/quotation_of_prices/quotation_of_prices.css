@@ -1,0 +1,49 @@
+i.fa {
+	margin-right: 5px;
+}
+
+button.am-btn>i.fa {
+	margin-right: 0;
+}
+
+.quotation-of-prices-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.search>.am-g {
+	height: 37px;
+	line-height: 37px;
+	margin: 5px 0;
+	text-align: center;
+	padding-left: 12px;
+}
+
+.search>.am-g>span {
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+}
+
+.search>.am-g>input {
+	border: none;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	line-height: 37px;
+	height: 37px;
+}
+.goods-list li {
+	padding: 5px;
+}
+.goods-list li div{
+	text-indent: 15px;
+}
+.goods-list li div:first-of-type{
+	text-indent: 5px;
+}
+.goods-list li div input{
+	width: 50px;
+}
