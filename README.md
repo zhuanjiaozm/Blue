@@ -1,5 +1,5 @@
 README
-1.文件结构说明
+#1.文件结构说明
    ./bower_components/    基于bower的公共库存放位置
    ./common/    公共静态资源文件夹
        ./common/css/    可重复利用的样式文件
@@ -10,5 +10,5 @@ README
    ./README    项目前端说明
    ./virtual_data/    用于前端测试时的json文件存放位置，其子目录以对应功能的名称命名
 
-2.项目发布
+#2.项目发布
     将./*文件上传至web服务器的发布目录下，对应到本文件路径即可 例如登陆即是：www.xxxx.com/function/login/index.html

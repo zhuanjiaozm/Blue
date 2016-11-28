@@ -1,94 +1,96 @@
 <!doctype html>
 <html class="no-js">
 
-	<head>
-		<meta charset="utf-8">
-		<!-- 全屏显示 开始设置-->
-		<meta name="full-screen" content="yes" />
-		<meta name="x5-fullscreen" content="true" />
-		<!-- 全屏显示 结束设置-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<title>申购单（草稿）-YunERP管理系统</title>
-		<!-- Set render engine for 360 browser -->
-		<meta name="renderer" content="webkit">
-		<!-- No Baidu Siteapp-->
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="" />
-		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
-		<meta name="msapplication-TileColor" content="#0e90d2">
-		<!-- 隐藏状态栏/设置状态栏颜色 -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
-		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./purchasing_requisition_draft.css">
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <!-- 全屏显示 开始设置-->
+        <meta name="full-screen" content="yes"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <!-- 全屏显示 结束设置-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>申购单（草稿）-YunERP管理系统</title>
+        <!-- Set render engine for 360 browser -->
+        <meta name="renderer" content="webkit">
+        <!-- No Baidu Siteapp-->
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <link rel="icon" type="image/png" href="../../img/common/favicon.png">
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+        <meta name="msapplication-TileColor" content="#0e90d2">
+        <!-- 隐藏状态栏/设置状态栏颜色 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+        <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./purchasing_requisition_draft.css">
+    </head>
 
-	<body ng-controller="purchasing_requisition_draft-controller">
-		<div class="am-g purchasing-requisition-draft-title">
-			<div class="am-u-sm-2 go-back">
-				<a href="javascript:history.back(-1);">
-					<i class="fa fa-chevron-left" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="am-u-sm-8 am-text-center">
-				申购单（草稿）
-			</div>
-			<div class="am-u-sm-2 am-text-right profile_edit">
-				<a href="../purchasing_requisition/index.html">
-					<i class="fa fa-plus" aria-hidden="true"></i>
-				</a>
-			</div>
-		</div>
-		<ul class="purchasing-requisition-list">
-			<li ng-repeat="purchasingRequisition in purchasingRequisitionList">
-				<div>
-					<i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
-					<small>创建时间:</small>
-					<i><span ng-bind="purchasingRequisition.creatTime"></span></i>
-					<span class="pull-right purchasing-goods-operate">
-						<i class="fa fa-pencil-square-o am-text-warning" aria-hidden="true"></i>
-						<i class="fa fa-times  am-text-danger" aria-hidden="true" ng-click="deletePurchasingRequisition(purchasingRequisition)"></i>
-					</span>
-				</div>
-				<div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods">
-					{{$index+1}}.<label ng-bind="purchasingGoods.name"></label>:
-					<span ng-bind="purchasingGoods.account+'斤'" class="am-text-success"></span>
-				</div>
-			</li>
-		</ul>
-		<div class="am-modal am-modal-confirm" tabindex="-1" id="deletePurchasingRequisition">
-			<div class="am-modal-dialog">
-				<!--<div class="am-modal-hd">Amaze UI</div>-->
-				<div class="am-modal-bd">
-					你确定要删除吗？
-				</div>
-				<div class="am-modal-footer">
-					<span class="am-modal-btn" data-am-modal-cancel>取消</span>
-					<span class="am-modal-btn" data-am-modal-confirm>确定</span>
-				</div>
-			</div>
-		</div>
-		<!--在这里编写你的代码-->
+    <body ng-controller="purchasing_requisition_draft-controller">
+        <div class="am-g purchasing-requisition-draft-title">
+            <div class="am-u-sm-2 go-back">
+                <a href="javascript:history.back(-1);">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="am-u-sm-8 am-text-center">
+                申购单（草稿）
+            </div>
+            <div class="am-u-sm-2 am-text-right profile_edit">
+                <a href="../purchasing_requisition/index.html">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <ul class="purchasing-requisition-list">
+            <li ng-repeat="purchasingRequisition in purchasingRequisitionList">
+                <div>
+                    <i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
+                    <small>创建时间:</small>
+                    <i>
+                        <span ng-bind="purchasingRequisition.creatTime"></span>
+                    </i>
+                    <span class="pull-right purchasing-goods-operate">
+                        <i class="fa fa-pencil-square-o am-text-warning" aria-hidden="true"></i>
+                        <i class="fa fa-times  am-text-danger" aria-hidden="true" ng-click="deletePurchasingRequisition(purchasingRequisition)"></i>
+                    </span>
+                </div>
+                <div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods">
+                    {{$index+1}}.<label ng-bind="purchasingGoods.name"></label>:
+                    <span ng-bind="purchasingGoods.account+'斤'" class="am-text-success"></span>
+                </div>
+            </li>
+        </ul>
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="deletePurchasingRequisition">
+            <div class="am-modal-dialog">
+                <!--<div class="am-modal-hd">Amaze UI</div>-->
+                <div class="am-modal-bd">
+                    你确定要删除吗？
+                </div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                    <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                </div>
+            </div>
+        </div>
+        <!--在这里编写你的代码-->
 
-		<!--[if (gte IE 9)|!(IE)]><!-->
-		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
-		<!--<![endif]-->
-		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-		<script src="../../bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="./purchasing_requisition_draft.js"></script>
-	</body>
+        <!--[if (gte IE 9)|!(IE)]><!-->
+        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+        <!--<![endif]-->
+        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+        <script src="../../bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./purchasing_requisition_draft.js"></script>
+    </body>
 
 </html>

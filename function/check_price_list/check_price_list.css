@@ -1,0 +1,77 @@
+i.fa {
+    margin-right: 5px;
+}
+
+button.am-btn>i.fa {
+    margin-right: 0;
+}
+
+.check-price-list-title {
+    margin-top: 5px;
+    height: 47px;
+    line-height: 37px;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+    font-size: 24px;
+    font-weight: bold;
+}
+.goods-list-title button{
+  height: 31px;
+}
+.search>.am-g {
+    height: 37px;
+    line-height: 37px;
+    margin: 5px 0;
+    text-align: center;
+    padding-left: 12px;
+}
+
+.search>.am-g>span {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+
+.search>.am-g>input {
+    border: none;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    line-height: 37px;
+    height: 37px;
+}
+
+.goods-list-title {
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: rgba(106, 195, 134, 0.1);
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+}
+
+ul.goods-list {
+    margin: 0;
+    padding: 0;
+}
+
+ul.goods-list>li {
+    margin: 10px 5px;
+    padding: 5px;
+    list-style: none;
+    border: 1px solid #ccc;
+    box-shadow: 2px 3px 10px 0 rgba(2, 4, 7, .2);
+}
+
+ul.goods-list>li>div {
+    margin: 3px 0;
+    line-height: 37px;
+    height: 37px;
+}
+
+ul.goods-list>li>div>input {
+    border: none;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    line-height: 37px;
+    height: 37px;
+}
+
+ul.goods-list>li>div>button {
+    margin-top: 5px;
+}
