@@ -1,0 +1,229 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- 全屏显示 开始设置-->
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<!-- 全屏显示 结束设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>收货入库-YunERP管理系统</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="" />
+		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!-- 隐藏状态栏/设置状态栏颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./put_in_storage.css">
+	</head>
+
+	<body>
+		<div class="am-g put-in-storage-title">
+			<div class="am-u-sm-2 go-back">
+				<a href="javascript:history.back(-1);">
+					<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-8 am-text-center">
+				收货入库
+			</div>
+			<div class="am-u-sm-2 am-text-right profile_edit">
+				<!-- <a href="../purchasing_requisition/index.html">
+								<i class="fa fa-plus" aria-hidden="true"></i>
+						</a> -->
+			</div>
+		</div>
+		<div class="am-g storage-select">
+			<div class="am-u-sm-3">
+				仓库：
+			</div>
+			<div class="am-u-sm-9">
+				<select data-am-selected>
+					<option value="a">仓库A</option>
+					<option value="b" selected>仓库B</option>
+					<option value="o">仓库C</option>
+					<option value="m">仓库D</option>
+					<option value="d" disabled>仓库E</option>
+				</select>
+			</div>
+		</div>
+		<div class="am-tabs" id="doc-my-tabs">
+			<ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
+				<li class="am-active">
+					<a href="">待收货</a>
+				</li>
+				<li>
+					<a href="">已入库</a>
+				</li>
+
+			</ul>
+			<div class="am-tabs-bd">
+				<div class="am-tab-panel am-active">
+					<table class="am-table am-table-bordered am-table-striped am-table-compact">
+						<thead>
+							<tr>
+								<th>商品</th>
+								<th>需求(斤)</th>
+								<th>送货(斤)</th>
+								<th>入库(斤)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<label class="am-checkbox">
+								      <input type="checkbox" value="" data-am-ucheck> 大白菜
+								    </label>
+								</td>
+								<td>123</td>
+								<td>113</td>
+								<td>110</td>
+							</tr>
+							<tr class="am-danger">
+								<td><label class="am-checkbox">
+								      <input type="checkbox" value="" data-am-ucheck> 花椰菜
+								    </label></td>
+								<td>781</td>
+								<td>780</td>
+								<td>781</td>
+							</tr>
+							<tr>
+								<td><label class="am-checkbox">
+								      <input type="checkbox" value="" data-am-ucheck> 土豆豆
+								    </label></td>
+								<td>482</td>
+								<td>480</td>
+								<td>479</td>
+							</tr>
+							<tr class="am-danger">
+								<td><label class="am-checkbox">
+								      <input type="checkbox" value="" data-am-ucheck> 羊肉
+								    </label></td>
+								<td>212</td>
+								<td>210</td>
+								<td>211</td>
+							</tr>
+							<tr>
+								<td><label class="am-checkbox">
+								      <input type="checkbox" value="" data-am-ucheck> 鱼肉
+								    </label></td>
+								<td>393</td>
+								<td>390</td>
+								<td>391</td>
+							</tr>
+							<tr>
+								<td><label class="am-checkbox">
+								      <input type="checkbox" value="" data-am-ucheck> 牛肉
+								    </label></td>
+								<td>92</td>
+								<td>90</td>
+								<td>90</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<button type="button" class="am-btn am-btn-success am-btn-block">
+								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>确认</button>
+
+				</div>
+				<div class="am-tab-panel">
+					<table class="am-table am-table-bordered am-table-striped am-table-compact">
+						<thead>
+							<tr>
+								<th>商品</th>
+								<th>需求(斤)</th>
+								<th>送货(斤)</th>
+								<th>入库(斤)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									大白菜
+								</td>
+								<td>123</td>
+								<td>113</td>
+								<td>110</td>
+							</tr>
+							<tr class="am-danger">
+								<td>花椰菜</td>
+								<td>781</td>
+								<td>780</td>
+								<td>781</td>
+							</tr>
+							<tr>
+								<td>土豆豆</td>
+								<td>482</td>
+								<td>480</td>
+								<td>479</td>
+							</tr>
+							<tr class="am-danger">
+								<td>羊肉</td>
+								<td>212</td>
+								<td>210</td>
+								<td>211</td>
+							</tr>
+							<tr>
+								<td>鱼肉</td>
+								<td>393</td>
+								<td>390</td>
+								<td>391</td>
+							</tr>
+							<tr>
+								<td>牛肉</td>
+								<td>92</td>
+								<td>90</td>
+								<td>90</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">破损登记</div>
+				<div class="am-modal-bd am-text-left">
+					<label class="am-checkbox">
+				      <input type="checkbox" value="" data-am-ucheck>全部退还
+				    </label>
+					<label class="am-checkbox">
+				      <input type="checkbox" value="" data-am-ucheck> 部分退还
+				    </label>
+					<label class="am-checkbox">
+				      <input type="checkbox" value="" data-am-ucheck> 不退换
+				    </label>
+				</div>
+				<div class="am-modal-footer">
+					<span class="am-modal-btn" data-am-modal-cancel>取消</span>
+					<span class="am-modal-btn" data-am-modal-confirm>提交</span>
+				</div>
+			</div>
+		</div>
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+		<script src="./put_in_storage.js"></script>
+	</body>
+
+</html>

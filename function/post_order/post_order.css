@@ -19,9 +19,8 @@
 .storage-select>div:last-of-type .am-selected{
 	width: 90%;
 } 
-.am-table .am-checkbox{
+.am-table .am-checkbox {
 	margin: 0;
-	
 }
 .operate .left-operate{
 	width: 40%;

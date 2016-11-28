@@ -1,0 +1,20 @@
+.put-in-storage-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.storage-select {
+	margin: 5px 0;
+}
+
+.am-btn i.fa {
+	margin-right: 5px;
+}
+
+.am-table .am-checkbox {
+	margin: 0;
+}
