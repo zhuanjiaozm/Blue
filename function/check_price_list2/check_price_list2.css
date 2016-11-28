@@ -1,0 +1,83 @@
+i.fa {
+	margin-right: 5px;
+}
+
+button.am-btn>i.fa {
+	margin-right: 0;
+}
+
+.check-price-list-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.goods-list-title button {
+	height: 31px;
+}
+
+.search>.am-g {
+	height: 37px;
+	line-height: 37px;
+	margin: 5px 0;
+	text-align: center;
+	padding-left: 12px;
+}
+
+.search>.am-g>span {
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+}
+
+.search>.am-g>input {
+	border: none;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+	line-height: 37px;
+	height: 37px;
+}
+
+.goods-list-title {
+	font-weight: bold;
+	line-height: 30px;
+	padding-left: 10px;
+	background-color: rgba(106, 195, 134, 0.1);
+	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+}
+
+.am-list>li {
+	width: 100%;
+	clear: both;
+	line-height: 40px;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #dedede;
+}
+.am-list>li:nth-of-type(even)>div{
+	background-color: rgba(228, 219, 219, 0.32);
+}
+.am-list>li:first-of-type>div{
+	background-color: rgba(123, 216, 101, 0.65);
+}
+
+.am-list>li>.li-left {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+}
+
+.am-list>li>.li-right {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+}
+div.submit{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}

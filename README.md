@@ -1,4 +1,3 @@
-README
 #1.文件结构说明
    ./bower_components/    基于bower的公共库存放位置
    ./common/    公共静态资源文件夹
