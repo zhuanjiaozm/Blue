@@ -50,8 +50,8 @@
 
 >##3.6采购  
 *  [采购清单](http://www.fengziqiao.xyz/function/purchasing_requisition_list/index.html)(http://www.fengziqiao.xyz/function/purchasing_requisition_list/index.html)  
-*  [采购数据录入]()()  
-*  [采购明细]()()  
+*  [采购数据录入](http://www.fengziqiao.xyz/function/purchasing_data_record/index.html)(http://www.fengziqiao.xyz/function/purchasing_data_record/index.html)  
+*  [采购明细](http://www.fengziqiao.xyz/function/procurement_detail/index.html)(http://www.fengziqiao.xyz/function/procurement_detail/index.html)  
 
 >##3.7派送入库
 *  [派送单](http://www.fengziqiao.xyz/function/post_order/index.html)(http://www.fengziqiao.xyz/function/post_order/index.html)  
