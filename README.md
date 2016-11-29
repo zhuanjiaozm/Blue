@@ -49,7 +49,7 @@
 *  [采购任务列表](http://www.fengziqiao.xyz/function/procurement_task_list/index.html)(http://www.fengziqiao.xyz/function/procurement_task_list/index.html)
 
 >##3.6采购  
-*  [采购清单](http://www.fengziqiao.xyz/function/purchasing_requisition_list_detail/index.html)(http://www.fengziqiao.xyz/function/purchasing_requisition_list_detail/index.html)  
+*  [采购清单](http://www.fengziqiao.xyz/function/purchasing_requisition_list/index.html)(http://www.fengziqiao.xyz/function/purchasing_requisition_list/index.html)  
 *  [采购数据录入]()()  
 *  [采购明细]()()  
 
@@ -63,3 +63,4 @@
 >##3.9有功能按钮无版面
 *  编辑个人信息(由个人信息页面右上角进入)
 *  追加（由采购清单右上角进入）
+*  供货商位置定位（采购清单）
