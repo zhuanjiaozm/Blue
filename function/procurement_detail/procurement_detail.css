@@ -1,0 +1,43 @@
+.procurement-detail-title {
+	margin-top: 5px;
+	height: 47px;
+	line-height: 37px;
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.goods-info {
+	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+}
+
+.title {
+	margin-top: 10px;
+}
+
+.form .am-input-group {
+	margin: 5px 0;
+}
+
+.form .am-input-group .am-input-group-label {
+	width: 124px;
+	text-align: right;
+}
+
+.form .am-selected-btn {
+	height: 38px;
+}
+.submit .left-button{
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+
+.submit .right-button{
+	width: 60%;
+	display: inline-block;
+	float: right;
+}
+.submit i.fa{
+	margin-right: 5px;
+}
