@@ -78,7 +78,7 @@
 			<li>
 				<div>
 					名称：
-					<select data-am-selected>
+					<select  data-am-selected="{maxHeight: 100,searchBox: 1}">
 						<option value="a">大白菜</option>
 						<option value="b" selected>小白菜</option>
 						<option value="o">花生</option>
@@ -89,16 +89,16 @@
 				<div>
 					数量：<input type="text">
 				</div>
-				<div class="">
-					<button type="button" class="am-btn am-btn-danger am-radius am-btn-xs pull-right" data-am-modal="{target: '#deleteConfirm'}">
-                        <i class="fa fa-times" aria-hidden="true"></i>
+				<div class="delete-button">
+					<button type="button" class="am-btn am-btn-default am-btn-block" data-am-modal="{target: '#deleteConfirm'}">
+                        <i class="fa fa-times" aria-hidden="true"></i>删除
                     </button>
 				</div>
 			</li>
 			<li>
 				<div>
 					名称：
-					<select data-am-selected>
+					<select data-am-selected id="demo-maxchecked">
 						<option value="a">大白菜</option>
 						<option value="b" selected>小白菜</option>
 						<option value="o">花生</option>
@@ -109,9 +109,9 @@
 				<div>
 					数量：<input type="text">
 				</div>
-				<div class="">
-					<button type="button" class="am-btn am-btn-danger am-radius am-btn-xs pull-right" data-am-modal="{target: '#deleteConfirm'}">
-                        <i class="fa fa-times" aria-hidden="true"></i>
+				<div class="delete-button">
+					<button type="button" class="am-btn am-btn-default am-btn-block" data-am-modal="{target: '#deleteConfirm'}">
+                        <i class="fa fa-times" aria-hidden="true"></i>删除
                     </button>
 				</div>
 			</li>

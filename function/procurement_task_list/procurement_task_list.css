@@ -6,32 +6,39 @@
 	font-size: 24px;
 	font-weight: bold;
 }
-.buyer{
+
+.buyer {
 	margin-bottom: 10px;
 }
+
 .buyer>.am-list {
 	margin: 0;
 }
 
 .buyer>.procurement-title {
 	padding: 5px;
-	background-color: rgba(189, 184, 184, 0.96);
+	background-color: #ccc;
 	font-size: 14px;
 	height: 37px;
 }
-.buyer>.procurement-title .am-btn i.fa{
+
+.buyer>.procurement-title .am-btn i.fa {
 	margin-right: 5px;
 }
+
 .buyer>.am-list li {
 	margin: 0;
 	padding: 5px;
 	background-color: rgba(221, 221, 221, 0.36);
-	border-bottom: 1px solid #847c7c;
+	border-bottom: 1px solid #dad1d1;
+	margin-bottom: 8px;
+	box-shadow: 2px 3px 10px 0 rgba(2, 4, 7, .2);
 }
 
-.buyer>.am-list li:first-of-type{
-	border-top: 1px solid #847c7c;
+.buyer>.am-list li:first-of-type {
+	border-top: 1px solid #dad1d1;
 }
+
 .buyer>.am-list li .goods-name {
 	height: 37px;
 	line-height: 37px;
@@ -41,6 +48,12 @@
 .buyer>.am-list li .goods-name .am-btn {
 	margin-top: -3px;
 }
-.am-badge{
+
+.am-badge {
 	margin: 0 5px;
+}
+
+.procurement-title>strong {
+	margin-top: 2px;
+	float: left;
 }

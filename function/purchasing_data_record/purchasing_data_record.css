@@ -27,17 +27,41 @@
 .form .am-selected-btn {
 	height: 38px;
 }
-.submit .left-button{
+
+.submit .left-button {
 	width: 40%;
 	display: inline-block;
 	float: left;
 }
 
-.submit .right-button{
+.submit .right-button {
 	width: 60%;
 	display: inline-block;
 	float: right;
 }
-.submit i.fa{
+
+.submit i.fa {
 	margin-right: 5px;
+}
+
+.am-input-group>input.am-form-field {
+	width: 200px;
+}
+
+.am-input-group>.radio-con>.am-radio {
+	display: inline-block;
+	float: left;
+	width: 100px;
+	padding: 0;
+}
+
+.radio-con {
+	width: 200px;
+	display: inline-block;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #ccc;
+	/*border-left: none;*/
+	text-align: center;
 }

@@ -22,10 +22,11 @@
 }
 
 .am-list>li {
-	border-bottom: 1px solid #847c7c;
+	/*border-bottom: 1px solid #847c7c;*/
 	padding: 5px;
 	background-color: rgba(221, 221, 221, 0.36);
-	margin-bottom: 1px;
+	margin-bottom: 10px;
+	    box-shadow: 2px 3px 10px 0 rgba(2, 4, 7, .2);
 }
 
 .am-list>li:first-of-type {
@@ -37,7 +38,12 @@
 }
 
 .am-list>li>div.goods-name {
-	height: 37px;
-	line-height: 37px;
+	/*height: 37px;
+	line-height: 37px;*/
+	padding-bottom: 8px;
 	border-bottom: 1px dashed #b1a8a8;
+}
+.am-btn{
+	padding: 2px 5px;
+	font-size: 10px;
 }

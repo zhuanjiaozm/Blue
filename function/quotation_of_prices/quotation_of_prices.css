@@ -38,12 +38,30 @@ button.am-btn>i.fa {
 .goods-list li {
 	padding: 5px;
 }
-.goods-list li div{
+/*.goods-list li>div{
 	text-indent: 15px;
+}*/
+.goods-list li>div>.am-badge{
+	margin-left: 20px;
+}
+.goods-list li>div>span.title{
+	display: inline-block;
+	float: left;
+	width: 80px;
+	text-align: right;
+	margin-right: 10px;
+	font-size: 14px;
 }
 .goods-list li div:first-of-type{
 	text-indent: 5px;
 }
 .goods-list li div input{
-	width: 50px;
+	width: 150px;
+}
+.goods-list label,
+.goods-list input{
+	margin-right: 5px;
+}
+.delete-button{
+	margin-top: 10px;
 }

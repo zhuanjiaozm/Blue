@@ -80,4 +80,7 @@ div.submit{
 	position: fixed;
     bottom: 0;
     width: 100%;
+}.am-table {
+    font-size: 14px;
+    margin: 10px 0;
 }

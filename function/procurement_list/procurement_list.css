@@ -8,9 +8,9 @@
 }
 
 .am-panel-default>.am-panel-hd {
-	background-color: #d8d823;
-	height: 56px;
-	line-height: 42px;
+	background-color: #d8d4d4;
+	/*height: 56px;
+	line-height: 42px;*/
 }
 
 .am-panel {
@@ -35,4 +35,7 @@
 }
 .operate{
 	margin: 15px 0 10px;
+}
+.am-badge{
+	margin: 0 5px;
 }

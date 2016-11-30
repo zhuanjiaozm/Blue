@@ -9,9 +9,12 @@
 
 .goods-info {
 	padding-top: 5px;
-	border-bottom: 1px solid #D1D1D1;
+	/*border-bottom: 1px solid #D1D1D1;*/
 	padding-bottom: 10px;
-	background-color: rgba(221, 221, 221, 0.58);
+	/*	background-color: rgba(221, 221, 221, 0.58);*/
+}
+.the-form{
+	margin-top: 20px;
 }
 
 .the-form>div {
@@ -22,34 +25,43 @@
 .the-form>div>strong {
 	display: inline-block;
 	float: left;
-	width: 30%;
-	text-align: right;
+	width: 22%;
+	/* text-align: right; */
 	padding-right: 10px;
 	line-height: 35px;
 	height: 35px;
+	text-indent: 15px;
 }
-.the-form>div>.am-checkbox-con{
+
+.the-form>div>.am-checkbox-con {
 	display: inline-block;
-	float: right;
+	/*float: right;*/
 	width: 70%;
 	line-height: 35px;
 	height: 35px;
 }
+
 .the-form>div>input[type=checkbox] {
 	border: none;
 	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
 	line-height: 35px;
 	height: 35px;
 }
-.the-form>div>.am-checkbox-con>label.am-checkbox{
+
+.the-form>div>.am-checkbox-con>label.am-checkbox {
 	margin-top: 8px;
 }
-.the-form>div.price>input{
+
+.the-form>div.price>input {
 	width: 50px;
 	margin-top: -5px;
 }
-div.submit{
+
+div.submit {
 	position: fixed;
-    bottom: 0;
-    width: 100%;
+	bottom: 0;
+	width: 100%;
+}
+.am-badge{
+	margin: 0 5px;
 }

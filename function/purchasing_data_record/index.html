@@ -158,10 +158,19 @@
 					*支付方式
 				</span>
 
-				<select data-am-selected>
-					<option value="o">现金</option>
-					<option value="m">刷卡</option>
-				</select>
+				<div class="radio-con">
+					<!--<label class="am-radio">
+			      <input type="radio" name="radio1" value="" data-am-ucheck>
+			    	现金
+			    </label>
+				<label class="am-radio">
+			      <input type="radio" name="radio1" value="" data-am-ucheck checked>
+			      	刷卡
+			    </label>-->
+					<input type="radio" name="way" id="way" value="" />&nbsp;现金
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="way" id="way" value="" />&nbsp;刷卡
+				</div>
 
 			</div>
 			<div class="am-input-group">
@@ -192,7 +201,7 @@
 
 		<div class="submit">
 			<div class="left-button">
-				<button type="button" class="am-btn am-btn-default am-btn-block"  data-am-modal="{target: '#my-prompt'}">
+				<button type="button" class="am-btn am-btn-default am-btn-block" data-am-modal="{target: '#my-prompt'}">
 					<i class="fa fa-reply-all" aria-hidden="true"></i>退单</button>
 			</div>
 			<div class="right-button">
@@ -213,7 +222,7 @@
 					<label class="am-checkbox">
 				      <input type="checkbox" value="" data-am-ucheck> 其他
 				    </label>
-				    <textarea name="" rows="" cols=""></textarea>
+					<textarea name="" rows="" cols=""></textarea>
 				</div>
 				<div class="am-modal-footer">
 					<span class="am-modal-btn" data-am-modal-cancel>取消</span>

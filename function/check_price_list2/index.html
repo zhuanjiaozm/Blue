@@ -32,6 +32,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
 		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
 		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../bower_components/jedate/skin/jedate.css">
 		<link rel="stylesheet" href="./check_price_list2.css">
 	</head>
 
@@ -55,12 +56,12 @@
 			<div class="am-g">
 				<span>
                     <i class="fa fa-clock-o" aria-hidden="true"></i>截止时间：</span>
-				<input type="text" placeholder="请点选截止时间" data-am-datepicker="{theme: 'danger'}" readonly/>
+				<input type="text" placeholder="请点选截止时间"  readonly id="eta"/>
 			</div>
 			<div class="am-g">
 				<span>
                     <i class="fa fa-clock-o" aria-hidden="true"></i>提货时间：</span>
-				<input type="text" placeholder="请点选提货时间" data-am-datepicker="{theme: 'success'}" readonly/>
+				<input type="text" placeholder="请点选提货时间" readonly id="eda"/>
 			</div>
 			<div class="am-g">
 				<span>
@@ -68,49 +69,43 @@
 				<input type="text" placeholder="请输入附属说明" />
 			</div>
 		</div>
-		<ul class="am-list am-list-static am-list-striped">
-			<li>
-				<div class="li-left">
-					商品
-				</div>
-				<div class="li-right">
-					数量（kg）
-				</div>
-			</li>
-			<li>
-				<div class="li-left">
-					1.大白菜
-				</div>
-				<div class="li-right">
-					2321.00
-				</div>
-			</li>
-			<li>
-				<div class="li-left">
-					2.大白菜
-				</div>
-				<div class="li-right">
-					2321.00
-				</div>
-			</li>
-			<li>
-				<div class="li-left">
-					3.大白菜
-				</div>
-				<div class="li-right">
-					2321.00
-				</div>
-			</li>
-			<li>
-				<div class="li-left">
-					4.大白菜
-				</div>
-				<div class="li-right">
-					2321.00
-				</div>
-			</li>
-			
-		</ul>
+		<table class="am-table  am-table-striped am-table-hover am-table-compact am-table-bordered">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>商品</th>
+									<th>数量</th>
+									<th>单位</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>西红柿</td>
+									<td>31</td>
+									<td>斤</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>土豆豆</td>
+									<td>89</td>
+									<td>斤</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>白酒酒</td>
+									<td>11</td>
+									<td>瓶</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>红红酒</td>
+									<td>23</td>
+									<td>支</td>
+								</tr>
+								
+							</tbody>
+						</table>
 		<div class="submit">
 			<a  class="am-btn am-btn-success am-btn-block"  href="../quotation_of_prices/index.html">
 				<i class="fa fa-upload" aria-hidden="true"></i>
@@ -120,6 +115,7 @@
 		<!--[if (gte IE 9)|!(IE)]><!-->
 		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+		<script src="../../bower_components/jedate/jquery.jedate.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--<![endif]-->
 		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
 		<script src="./check_price_list2.js"></script>

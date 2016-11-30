@@ -22,7 +22,7 @@
 	list-style: none;
 	line-height: 37px;
 	height: 37px;
-	text-align: center;
+	padding-left: 10px;
 }
 
 .purchasing-requisition-form>ul>li>input {
@@ -62,7 +62,11 @@
 	line-height: 30px;
 	font-size: 14px;
 	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
-	background-color: rgba(193, 222, 226, 0.37);
+	/*background-color: rgba(193, 222, 226, 0.37);*/
+}
+
+.goods-list>li .am-g label {
+	color: #949494;
 }
 
 .goods-list>li input {
@@ -171,4 +175,18 @@ ul#goods-list>li.editEnable {
 .am-modal-alert>.am-modal-dialog {
 	width: 95%;
 	margin-left: -4px;
+}
+
+.goods .am-btn.am-disabled,
+.am-btn[disabled],
+fieldset[disabled] .am-btn {
+	opacity: 1;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.submit-form {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
