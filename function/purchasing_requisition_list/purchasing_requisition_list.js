@@ -1,5 +1,6 @@
 var app = angular.module('app', []);
 app.controller('purchasing_requisition_list-controller', function($scope, $http) {
+	$scope.isopen=true;
 	$http({
 			url: '../../virtual_data/purchasing_requisition_list/purchasing_requisition_list.json',
 			method: 'GET'

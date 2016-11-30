@@ -53,10 +53,10 @@
 		</div>
 		<ul class="am-list admin-sidebar-list" id="collapase-nav-1">
 			<li class="am-panel" ng-repeat="purchasingRequisition in purchasingRequisitionList">
-				<a data-am-collapse="{parent: '#collapase-nav-1', target: '#user-nav-{{$index}}'}">
+				<a data-am-collapse="{parent: '#collapase-nav-1', target: '#user-nav-{{$index}}'}" ng-click="isopen=!isopen">
 					<i class="fa fa-calendar am-text-primary" aria-hidden="true"></i> 到货时间: <label for="" ng-bind="purchasingRequisition.arriveTime"></label>
 					<strong class="am-text-danger">（明天）</strong>
-					<i class="am-icon-angle-right am-fr am-margin-down"></i>
+					<i class="am-icon-angle-down am-fr am-margin-down" ng-class="{true: 'am-icon-angle-down', false: 'am-icon-angle-up'}[isopen]"></i>
 				</a>
 				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="user-nav-{{$index}}">
 					<li ng-repeat="purchasingRequisitionObject in purchasingRequisition.goodsList">
