@@ -46,7 +46,7 @@
 				申购单（待审核）
 			</div>
 			<div class="am-u-sm-2 am-text-right profile_edit">
-				<a href=""  data-am-offcanvas="{target: '#doc-oc-demo3'}">
+				<a href="" data-am-offcanvas="{target: '#doc-oc-demo3'}">
 					<i class="fa fa-eye " aria-hidden="true "></i>
 				</a>
 			</div>
@@ -56,12 +56,12 @@
 				<a data-am-collapse="{parent: '#collapase-nav-1', target: '#user-nav-{{$index}}'}">
 					<i class="fa fa-calendar am-text-primary" aria-hidden="true"></i> 到货时间: <label for="" ng-bind="purchasingRequisition.arriveTime"></label>
 					<strong class="am-text-danger">（明天）</strong>
-					<i class="am-icon-angle-right am-fr am-margin-right"></i>
+					<i class="am-icon-angle-right am-fr am-margin-down"></i>
 				</a>
 				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="user-nav-{{$index}}">
 					<li ng-repeat="purchasingRequisitionObject in purchasingRequisition.goodsList">
 						<div>
-							<i class="fa fa-fort-awesome" aria-hidden="true"></i>采购单位：<b class="am-text-success" ng-bind="purchasingRequisitionObject.department.name"></b>
+							<i class="fa fa-fort-awesome" aria-hidden="true"></i>采购单位：<b ng-bind="purchasingRequisitionObject.department.name"></b>
 						</div>
 						<div>
 							<i class="fa fa-clock-o" aria-hidden="true"></i>申请时间：{{purchasingRequisitionObject.requestTime}}
@@ -69,11 +69,30 @@
 						<div>
 							<i class="fa fa-shopping-basket" aria-hidden="true"></i>采购需求:
 						</div>
-						<ul>
+						<!--<ul>
 							<li ng-repeat=" goondsObj in purchasingRequisitionObject.goodsArray">
 								{{$index+1}}.<strong class="am-text-success">{{goondsObj.goods.name}}</strong>: <span class="am-text-danger">{{goondsObj.account}}</span> 斤
 							</li>
-						</ul>
+						</ul>-->
+						<table class="am-table  am-table-striped am-table-hover am-table-compact am-table-bordered">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>商品</th>
+									<th>数量</th>
+									<th>单位</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat=" goondsObj in purchasingRequisitionObject.goodsArray">
+									<td>{{$index+1}}</td>
+									<td>{{goondsObj.goods.name}}</td>
+									<td>{{goondsObj.account}}</td>
+									<td>斤</td>
+								</tr>						
+							</tbody>
+						</table>
+
 						<button type="button" class="am-btn am-btn-success am-btn-block am-btn-xs" ng-click="changeLocation()">							
 							<i class="fa fa-eye" aria-hidden="true"></i>查看详情							
 						</button>
@@ -82,32 +101,32 @@
 				</ul>
 			</li>
 		</ul>
-		
+
 		<!-- 侧边栏内容 -->
-<div id="doc-oc-demo3" class="am-offcanvas">
-  <div class="am-offcanvas-bar am-offcanvas-bar-flip">
-    <div class="am-offcanvas-content">
-      <label class="am-checkbox">
+		<div id="doc-oc-demo3" class="am-offcanvas">
+			<div class="am-offcanvas-bar am-offcanvas-bar-flip">
+				<div class="am-offcanvas-content">
+					<label class="am-checkbox">
       <input type="checkbox" value="" data-am-ucheck> 单位1
     </label>
-    </div>
-    <div class="am-offcanvas-content">
-      <label class="am-checkbox">
+				</div>
+				<div class="am-offcanvas-content">
+					<label class="am-checkbox">
       <input type="checkbox" value="" data-am-ucheck> 单位B
     </label>
-    </div>
-    <div class="am-offcanvas-content">
-      <label class="am-checkbox">
+				</div>
+				<div class="am-offcanvas-content">
+					<label class="am-checkbox">
       <input type="checkbox" value="" data-am-ucheck> 单位C
     </label>
-    </div>
-    <div class="am-offcanvas-content">
-      <label class="am-checkbox">
+				</div>
+				<div class="am-offcanvas-content">
+					<label class="am-checkbox">
       <input type="checkbox" value="" data-am-ucheck> 单位D
     </label>
-    </div>
-  </div>
-</div>
+				</div>
+			</div>
+		</div>
 
 		<!--在这里编写你的代码-->
 
