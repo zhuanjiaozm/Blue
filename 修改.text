@@ -5,8 +5,16 @@ http://192.168.1.54:9999/Blue/function/purchasing_requisition_list/index.html
 http://192.168.1.54:9999/Blue/function/purchasing_requisition/index.html
 3.询价单
 http://192.168.1.54:9999/Blue/function/check_price_list/index.html
+商品名称选择时采用与《采购申请》页面一样的模式
+
+
+
+
 4.报价
 http://192.168.1.54:9999/Blue/function/quotation_of_prices/index.html
+
+删除的方式改成图标浮动到商品名称的右侧   图标标红加粗显示
+
 5.询价单2
 http://192.168.1.54:9999/Blue/function/check_price_list2/index.html
 6.采购队列
@@ -21,3 +29,8 @@ http://192.168.1.54:9999/Blue/function/purchasing_data_record/index.html
 
 
 计算器：http://www.17sucai.com/pins/demoshow/15188
+
+
+
+标题灰色背景：rgba(204, 204, 204, 0.61)
+内容容器的灰色背景：rgb(245, 245, 245)

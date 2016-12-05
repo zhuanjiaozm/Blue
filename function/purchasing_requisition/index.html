@@ -1,217 +1,225 @@
 <!doctype html>
 <html class="no-js">
 
-	<head>
-		<meta charset="utf-8">
-		<!-- 全屏显示 开始设置-->
-		<meta name="full-screen" content="yes" />
-		<meta name="x5-fullscreen" content="true" />
-		<!-- 全屏显示 结束设置-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<title>采购申请-YunERP管理系统</title>
-		<!-- Set render engine for 360 browser -->
-		<meta name="renderer" content="webkit">
-		<!-- No Baidu Siteapp-->
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="" />
-		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
-		<meta name="msapplication-TileColor" content="#0e90d2">
-		<!-- 隐藏状态栏/设置状态栏颜色 -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
-		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./purchasing_requisition.css">
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <!-- 全屏显示 开始设置-->
+        <meta name="full-screen" content="yes"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <!-- 全屏显示 结束设置-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>采购申请-YunERP管理系统</title>
+        <!-- Set render engine for 360 browser -->
+        <meta name="renderer" content="webkit">
+        <!-- No Baidu Siteapp-->
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <link rel="icon" type="image/png" href="../../img/common/favicon.png">
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+        <meta name="msapplication-TileColor" content="#0e90d2">
+        <!-- 隐藏状态栏/设置状态栏颜色 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+        <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./purchasing_requisition.css">
+    </head>
 
-	<body ng-controller="purchasing-requisition-controller">
-		<div class="am-g purchasing-requisition-title">
-			<div class="am-u-sm-3 go-back">
-				<a href="javascript:history.back(-1);">
-					<i class="fa fa-chevron-left" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="am-u-sm-6 am-text-center">
-				采购申请
-			</div>
-			<div class="am-u-sm-3 am-text-right profile_edit">
-				<a href="../purchasing_requisition_import/index.html">
-					<i class="fa fa-reply-all" aria-hidden="true"></i>
-				</a>
-			</div>
-		</div>
-		<div class="purchasing-requisition-form">
-			<ul>
-				<li>
-					<label for="company">申请单位：</label>
-					<input type="text" name="" value="广州市广州第五中学食堂" disabled>
-				</li>
-				<li>
-					<label for="company">到货日期：</label>
-					<input type="text" name="" value="" placeholder="到货日期" data-am-datepicker>
-				</li>
-				<li>
-					<label for="company">申请备注：</label>
-					<input type="text" name="" value="教育局领导来访，加菜。">
-				</li>
-			</ul>
-		</div>
+    <body ng-controller="purchasing-requisition-controller">
+        <div class="am-g head-title">
+            <div class="am-u-sm-3 go-back">
+                <a href="javascript:history.back(-1);">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="am-u-sm-6 am-text-center">
+                采购申请
+            </div>
+            <div class="am-u-sm-3 am-text-right profile_edit">
+                <a href="../purchasing_requisition_import/index.html">
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="purchasing-requisition-form">
+            <ul>
+                <li>
+                    <label for="company">项目名称：</label>
+                    <!-- <input type="text" value="广州市广州第五中学食堂" ng-model="theForm.project_id"> -->
+                    <select data-am-selected="{searchBox: 1}" ng-model="theForm.project_id">
+                        <option value="project.proj_id" ng-repeat="project in projectList" ng-bind="project.project_name"></option>
+                    </select>
+										<!-- <select ng-model="selectedName" ng-options="project.project_name for project in projectList"> -->
+                </li>
+                <li>
+                    <label for="company">到货日期：</label>
+                    <input type="text" name="" value="" placeholder="到货日期" data-am-datepicker ng-model="theForm.need_date">
+                </li>
+                <li>
+                    <label for="company">申请备注：</label>
+                    <input type="text" name="" value="教育局领导来访，加菜。" ng-model="theForm.remark">
+                </li>
+            </ul>
+        </div>
 
-		<div class="goods-list-title">
-			<i class="fa fa-list-alt" aria-hidden="true"></i>申购商品
-			<button class="am-btn am-btn-success am-btn-xs am-fr add-good " id="add-good" ng-click="addGoods()" ng-if="added">
-				<i class="fa fa-plus" aria-hidden="true"></i>
-			</button>
-			<button class="am-btn am-btn-success am-btn-xs am-fr add-good " id="add-good" ng-if="!added" disabled>
-				<i class="fa fa-plus" aria-hidden="true"></i>
-			</button>
-		</div>
-		<ul class="goods-list" id="goods-list">
-			<li ng-repeat="item in goodList" ng-class="{'editEnable': item.editEnable}">
-				<div class="goods am-g">
-					<div class="am-input-group am-u-sm-8">
-						<button type="button" ng-click="selectGoods($index)" class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info" ng-bind="'['+item.good.id +']'+'/'+ item.good.name" ng-if="item.good.id" ng-disabled="!item.editEnable">														
-						</button>
-						<button type="button" ng-click="selectGoods($index)" class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info" ng-bind="'请选择商品'" ng-if="!item.good.id">														
-						</button>
-					</div>
-					<div class="am-u-sm-4 am-text-right">
-						<div class="am-btn-group">
-							<button type="button" class="am-btn am-btn-default am-round am-btn-xs" ng-click="editGoods(item)" ng-class="{'am-btn-warning': item.editEnable}">
-								<i class="fa fa-pencil" aria-hidden="true"  ng-class="{'fa-floppy-o': item.editEnable}"></i>
-							</button>
-							<button type="button" class="am-btn am-btn-danger am-round am-btn-xs" ng-click="deleteGoods(item)">
-								<i class="fa fa-times" aria-hidden="true"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="am-g">
-					<div class="am-u-sm-4 am-text-right">
-						<label for="count">数量(斤)：</label>
-					</div>
-					<div class="am-u-sm-8">
-						<input type="text" id="count" ng-model="item.accout" ng-disabled="!item.editEnable" />
-					</div>
-				</div>
-				<div class="am-g">
-					<div class="am-u-sm-4 am-text-right">
-						<label for="remark">商品备注：</label>
-					</div>
-					<div class="am-u-sm-8">
-						<input type="text" id="remark" ng-model="item.remark" ng-disabled="!item.editEnable" />
-					</div>
-				</div>
-			</li>
-		</ul>
-		<div class="am-g submit-form" ng-if="goodList.length>0">
-			<div>
-				<button type="button" class="am-btn am-btn-warning am-btn-block">
-						<i class="fa fa-floppy-o" aria-hidden="true"></i><a href="../purchasing_requisition_draft/index.html" style="color: #FFFFFF;">存为草稿</a>
-					</button>
-			</div>
-			<div>
-				<button type="button" class="am-btn am-btn-success am-btn-block">
-						<i class="fa fa-check" aria-hidden="true"></i>
-						立即提交
-					</button>
-			</div>
-		</div>
+        <div class="goods-list-title title-bg">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>申购商品
+            <button class="am-btn am-btn-success am-btn-xs am-fr add-good " id="add-good" ng-click="addGoods()">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </div>
+        <ul class="goods-list" id="goods-list">
+            <li ng-repeat="item in goodList" ng-class="{'editEnable': item.editEnable}">
+                <div class="goods am-g">
+                    <div class="am-input-group am-u-sm-8">
+                        <button type="button" ng-click="selectGoods($index)" class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info" ng-if="item.good.product_name" style="height: 28px;">
+                            <span ng-if="item.good.product_code" ng-bind="'['+item.good.product_code+']'"></span>
+                            <span ng-bind="item.good.product_name+item.good.unit_name"></span>
+                        </button>
+                        <button type="button" ng-click="selectGoods($index)" class="am-btn am-btn-default am-radius am-btn-xs am-btn-block item-goods-info" ng-bind="'请选择商品'" ng-if="!item.good.product_name" style="height: 28px;"></button>
+                    </div>
+                    <div class="am-u-sm-4 am-text-right">
+                        <button type="button" class="am-btn am-btn-default  am-btn-xs" ng-click="deleteGoods(item)">
+                            <i class="fa fa-times am-text-danger" aria-hidden="true"></i>
+                        </button>
+                        <!-- <div class="am-btn-group">
+                            <button type="button" class="am-btn am-btn-default am-btn-xs" ng-click="editGoods(item)">
+                                <i class="fa fa-pencil" aria-hidden="true" ng-class="{'': item.editEnable}"></i>
+                            </button>
+                            <button type="button" class="am-btn am-btn-default  am-btn-xs" ng-click="deleteGoods(item)">
+                                <i class="fa fa-times am-text-danger" aria-hidden="true"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="am-g">
+                    <div class="am-u-sm-4 am-text-right">
+                        <label for="count">数量：</label>
+                    </div>
+                    <div class="am-u-sm-8">
+                        <input type="text" id="count" ng-model="item.accout"/>
+                    </div>
+                </div>
+                <div class="am-g">
+                    <div class="am-u-sm-4 am-text-right">
+                        <label for="remark">商品备注：</label>
+                    </div>
+                    <div class="am-u-sm-8">
+                        <input type="text" id="remark" ng-model="item.remark"/>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="am-g submit-form" ng-if="goodList.length>0">
+            <div>
+                <button type="button" class="am-btn am-btn-warning am-btn-block">
+                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                    <a href="../purchasing_requisition_draft/index.html" style="color: #FFFFFF;">存为草稿</a>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="am-btn am-btn-success am-btn-block" ng-click='save()'>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    立即提交
+                </button>
+            </div>
+        </div>
 
-		<div class="am-modal am-modal-alert" tabindex="-1" id="select-goods">
-			<div class="am-modal-dialog">
-				<div class="am-modal-hd">请选择商品</div>
-				<div class="am-modal-bd">
-					<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
-						<ul class="am-tabs-nav am-nav am-nav-tabs">
-							<li class="am-active">
-								<a href="javascript: void(0)">分类查找</a>
-							</li>
-							<li>
-								<a href="javascript: void(0)">快速搜索</a>
-							</li>
-						</ul>
+        <div class="am-modal am-modal-alert" tabindex="-1" id="select-goods">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd title-bg">
+                    <span class="am-fl" ng-click="closeModal()">
+                        <i class="fa fa-chevron-left" aria-hidden="true" data-am-modal-cancel></i>
+                    </span>
+                    请选择商品
 
-						<div class="am-tabs-bd">
-							<div class="am-tab-panel am-active">
-								<div class="pull-left am-text-center" ng-init="currentIndex=0">
-									<ul class="categoryList">
-										<li ng-repeat="category in categoryList" ng-bind="category.name" ng-click="setCategory($index)" ng-class="{'current-index': currentIndex==$index}"></li>
-									</ul>
-								</div>
-								<div class="pull-right">
-									<a class="am-badge am-badge-success am-radius" ng-repeat="categoryGood in categoryList[currentIndex].children" ng-bind="categoryGood.name" ng-click="selectedGoods(categoryGood)"></a>
-								</div>
+                </div>
+                <div class="am-modal-bd">
+                    <div class="am-tabs" data-am-tabs="{noSwipe: 1}">
+                        <ul class="am-tabs-nav am-nav am-nav-tabs">
+                            <li class="am-active">
+                                <a href="javascript: void(0)">分类查找</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0)">快速搜索</a>
+                            </li>
+                        </ul>
 
-							</div>
-							<div class="am-tab-panel">
-								<div class="search">
-									<input type="text" class="am-form-field am-round" placeholder="请输入商品名称" ng-model="selectGoodsSearchKeyword" />
-								</div>
-								<div class="search-result" ng-if="selectGoodsSearchKeyword.length>0">
-									搜索匹配：
-									<a class="am-badge am-badge-success am-radius" ng-repeat="searchGood in searchResult" ng-bind="searchGood.name" ng-click="selectedGoods(recentGood)"></a>
+                        <div class="am-tabs-bd">
+                            <div class="am-tab-panel am-active">
+                                <div class="pull-left am-text-center" ng-init="currentIndex=0">
+                                    <ul class="categoryList">
+                                        <li ng-repeat="category in categoryList" ng-bind="category.type_name" ng-click="setCategory($index)" ng-class="{'current-index': currentIndex==$index}"></li>
+                                    </ul>
+                                </div>
+                                <div class="pull-right">
+                                    <a class="am-badge am-badge-default am-radius" ng-repeat="categoryGood in categoryList[currentIndex].productlist" ng-bind="categoryGood.product_name" ng-click="selectedGoods(categoryGood)"></a>
+                                </div>
 
-									<div ng-show="searchResult.length<1">
-										很遗憾，没有搜索到"<b class="am-text-danger" ng-bind="selectGoodsSearchKeyword"></b>"相关的商品。
-									</div>
-								</div>
-								<div class="search-recently" ng-if="recentSearch.length>0">
-									最近搜索：
-									<a class="am-badge am-badge-secondary am-radius" ng-repeat="recentGood in recentSearch" ng-bind="recentGood.name" ng-click="selectedGoods(recentGood)"></a>
-								</div>
-								<div class="clear-search-recently am-text-right" ng-if="recentSearch.length>0">
-									<!--<button type="button" class="am-btn am-btn-danger am-round am-btn-xs" ></button>-->
-									<i ng-click="clearSearchRecently()" class="am-text-danger">
-										<i class="fa fa-trash-o" aria-hidden="true"></i>清空最近搜索
-									</i>
-								</div>
-							</div>
+                            </div>
+                            <div class="am-tab-panel">
+                                <div class="search">
+                                    <input type="text" class="am-form-field am-round" placeholder="请输入商品名称" ng-model="selectGoodsSearchKeyword" ng-change="searchGoodsByKeyWord(selectGoodsSearchKeyword)"/>
+                                </div>
+                                <div class="search-result" ng-if="searchResult.length>0">
+                                    搜索匹配：
+                                    <a class="am-badge am-badge-default am-radius" ng-repeat="searchGood in searchResult" ng-bind="searchGood.product_name" ng-click="selectedGoods(searchGood)"></a>
 
-						</div>
-					</div>
-				</div>
-				<!--<div class="am-modal-footer">
+                                    <div ng-show="searchResult.length<1">
+                                        很遗憾，没有搜索到"<b class="am-text-danger" ng-bind="selectGoodsSearchKeyword"></b>"相关的商品。
+                                    </div>
+                                </div>
+                                <div class="search-recently container-bg" ng-if="recentSearch.length>0">
+                                    最近搜索：
+                                    <a class="am-badge am-badge-default am-radius" ng-repeat="recentGood in recentSearch" ng-bind="recentGood.product_name" ng-click="selectedGoods(recentGood)"></a>
+                                </div>
+                                <div class="clear-search-recently am-text-right" ng-if="recentSearch.length>0">
+                                    <!--<button type="button" class="am-btn am-btn-danger am-round am-btn-xs" ></button>-->
+                                    <i ng-click="clearSearchRecently()" class="am-text-danger">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>清空最近搜索
+                                    </i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="am-modal-footer">
 					<span class="am-modal-btn">
 						<i class="fa fa-check" aria-hidden="true"></i>确定</span>
 				</div>-->
-			</div>
-		</div>
-		<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
-			<div class="am-modal-dialog">
-				<!--<div class="am-modal-hd">Amaze UI</div>-->
-				<div class="am-modal-bd">
-					你确定要删除吗？
-				</div>
-				<div class="am-modal-footer">
-					<span class="am-modal-btn" data-am-modal-cancel>取消</span>
-					<span class="am-modal-btn" data-am-modal-confirm>确定</span>
-				</div>
-			</div>
-		</div>
+            </div>
+        </div>
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+            <div class="am-modal-dialog">
+                <!--<div class="am-modal-hd">Amaze UI</div>-->
+                <div class="am-modal-bd">
+                    你确定要删除吗？
+                </div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                    <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                </div>
+            </div>
+        </div>
 
-		<!--[if (gte IE 9)|!(IE)]><!-->
-		<script src="../../bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
-		<!--<![endif]-->
-		<!--[if lte IE 8 ]> 
-			<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> 
-			<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> 
-			<script src="assets/js/amazeui.ie8polyfill.min.js"></script> 
-		<![endif]-->
-		<script src="./purchasing_requisition.js" type="text/javascript" charset="utf-8"></script>
-	</body>
+        <!--[if (gte IE 9)|!(IE)]><!-->
+        <script src="../../bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--<![endif]-->
+        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+        <script src="./purchasing_requisition.js" type="text/javascript" charset="utf-8"></script>
+    </body>
 
 </html>

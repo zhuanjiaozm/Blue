@@ -1,23 +1,25 @@
-.profile-title {
-    margin-top: 5px;
+.profile-title{
+    /* margin-top: 5px; */
     height: 47px;
-    line-height: 37px;
-    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    line-height: 47px;
+    /* border-bottom: 1px solid rgba(177, 168, 168, 0.21); */
     font-size: 24px;
     font-weight: bold;
+    background-color: rgba(75, 188, 255, 0.58);
+    color: #fff;
 }
 
-.profile-title .go-back a>i {
-    color: #e6e6e6;
+.profile-title a>i.fa {
+    color: #fff;
 }
-
+/*
 .profile-title .profile_edit a>i {
     color: #F37B1D;
 }
 
 .profile-title button.am-btn i.fa {
     color: #fff;
-}
+}*/
 
 .user-info ul {
     margin: 10px auto;

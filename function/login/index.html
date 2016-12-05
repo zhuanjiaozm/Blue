@@ -1,76 +1,80 @@
 <!doctype html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <!-- 全屏显示 开始设置-->
-        <meta name="full-screen" content="yes"/>
-        <meta name="x5-fullscreen" content="true"/>
-        <!-- 全屏显示 结束设置-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <title>登录-YunERP管理系统</title>
-        <!-- Set render engine for 360 browser -->
-        <meta name="renderer" content="webkit">
-        <!-- No Baidu Siteapp-->
-        <meta http-equiv="Cache-Control" content="no-siteapp"/>
-        <link rel="icon" type="image/png" href="../../img/common/favicon.png">
-        <!-- Add to homescreen for Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-        <!-- Add to homescreen for Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content=""/>
-        <link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
-        <meta name="msapplication-TileColor" content="#0e90d2">
-        <!-- 隐藏状态栏/设置状态栏颜色 -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-        <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
-        <link rel="stylesheet" href="./login.css">
-    </head>
-    <body>
-        <div class="am-g login-img">
-            <div class="am-u-sm-12 am-text-center">
-                <!-- <img src="../../img/login/login.jpg" alt=""> -->
-                <img src="../../img/login/20160217103049249.jpg" alt="">
-                <h1>YunERP管理系统</h1>
-            </div>
-        </div>
-        <ul class="login-form">
-            <li>
-                <label for="username">账号：</label>
-                <input type="text" name="" value="" placeholder="请输入用户名称" id=“username”>
-            </li>
-            <li>
-                <label for="password">密码：</label>
-                <input type="password" name="" value="" placeholder="请输入用户密码" id=“password”>
-            </li>
-            <li>
-                <span class="error-info am-text-danger">
-                    登录失败，用户名和密码不匹配。
+<html class="no-js" ng-app="app">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- 全屏显示 开始设置-->
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<!-- 全屏显示 结束设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>登录-YunERP管理系统</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="" />
+		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!-- 隐藏状态栏/设置状态栏颜色 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+		<link rel="stylesheet" href="./login.css">
+	</head>
+
+	<body ng-controller="login">
+		<div class="am-g login-img">
+			<div class="am-u-sm-12 am-text-center">
+				<!-- <img src="../../img/login/login.jpg" alt=""> -->
+				<img src="../../img/login/20160217103049249.jpg" alt="">
+				<h1>YunERP管理系统</h1>
+			</div>
+		</div>
+
+		<ul class="login-form">
+			<li>
+				<label for="username">账号：</label>
+				<input type="text" placeholder="请输入用户名称" ng-model="user.logname">
+			</li>
+			<li>
+				<label for="password">密码：</label>
+				<input type="password" placeholder="请输入用户密码" ng-model="user.password">
+			</li>
+			<li>
+				<span class="error-info am-text-danger" ng-bind="data.errMsg" ng-show="data.errMsg">
+                    
                 </span>
-            </li>
-            <li>
-                <button type="button" class="am-btn am-btn-success am-round am-btn-block login-button">
+			</li>
+			<li>
+				<button type="submit" class="am-btn am-btn-success am-round am-btn-block login-button" ng-click="login(user)" ng-disabled="(!user.logname)||(!user.password)">
                     登录
                 </button>
-            </li>
-            <li>
-                <i>（LOGO）东建公司</i>
-            </li>
-        </ul>
+			</li>
+			<li>
+				<i>（LOGO）东建公司</i>
+			</li>
+		</ul>
+		<!--在这里编写你的代码-->
 
-        <!--在这里编写你的代码-->
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+		<script src="../../bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+		<script src="./login.js"></script>
+	</body>
 
-        <!--[if (gte IE 9)|!(IE)]><!-->
-        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
-        <!--<![endif]-->
-        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-        <script src="./login.js"></script>
-    </body>
 </html>

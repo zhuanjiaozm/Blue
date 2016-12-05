@@ -8,12 +8,14 @@
 }
 
 .goods-info {
-	padding-top: 5px;
+	padding: 25px 5px 10px;
 	/*border-bottom: 1px solid #D1D1D1;*/
 	padding-bottom: 10px;
-	/*	background-color: rgba(221, 221, 221, 0.58);*/
+	background-color: rgba(221, 221, 221, 0.58);
+	height: 140px;
 }
-.the-form{
+
+.the-form {
 	margin-top: 20px;
 }
 
@@ -62,6 +64,7 @@ div.submit {
 	bottom: 0;
 	width: 100%;
 }
-.am-badge{
+
+.am-badge {
 	margin: 0 5px;
 }

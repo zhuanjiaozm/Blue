@@ -1,192 +1,194 @@
-.purchasing-requisition-title {
-	margin-top: 5px;
-	height: 47px;
-	line-height: 37px;
-	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
-	font-size: 24px;
-	font-weight: bold;
-}
-
 .purchasing-requisition-form {
-	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
 }
 
 .purchasing-requisition-form>ul {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .purchasing-requisition-form>ul>li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	line-height: 37px;
-	height: 37px;
-	padding-left: 10px;
+    margin: 13px 0;
+    padding: 0;
+    list-style: none;
+    line-height: 37px;
+    height: 37px;
+    padding-left: 10px;
 }
 
 .purchasing-requisition-form>ul>li>input {
-	border: none;
-	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    border: none;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
 }
 
 .goods-list-title {
-	font-weight: bold;
-	line-height: 30px;
-	padding-left: 10px;
-	background-color: rgba(106, 195, 134, 0.1);
-	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.21);
 }
 
 .goods-list-title>.add-good {
-	height: 30px;
+    height: 30px;
 }
 
 .goods-list-title>.add-good>i.fa {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 .goods-list-title i.fa {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 .goods-list {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .goods-list>li {
-	margin: 5px 0;
-	padding: 10px 5px 5px;
-	list-style: none;
-	line-height: 30px;
-	font-size: 14px;
-	border-bottom: 1px solid rgba(177, 168, 168, 0.21);
-	/*background-color: rgba(193, 222, 226, 0.37);*/
+    margin: 10px;
+    padding: 10px 5px 5px;
+    list-style: none;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid rgba(177, 168, 168, 0.21);
+    /*background-color: rgba(193, 222, 226, 0.37);*/
 }
 
-.goods-list>li .am-g label {
-	color: #949494;
+.goods-list>li:nth-of-type(even) {
+    background-color: rgb(245, 245, 245);
+}
+
+.goods-list>li .goods>button {
+    font-size: 12px;
+}
+
+.goods-list>li .am-g label, .am-input-group {
+    color: #080000;
+}
+
+.goods .am-btn.am-disabled, .am-btn[disabled], fieldset[disabled] .am-btn {
+    opacity: 1;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .goods-list>li input {
-	width: 90%;
-	border: none;
-	border-bottom: 1px solid #C0C0C0;
-	background-color: rgba(193, 222, 226, 0.03);
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #C0C0C0;
+    background-color: rgba(193, 222, 226, 0.03);
+    color: #080000;
 }
 
 ul#goods-list>li.editEnable {
-	background-color: #5eb95e;
-	color: #FFFFFF;
+    background-color: rgb(245, 245, 245);
+    color: #FFFFFF;
 }
 
 .submit-form>div {
-	display: inline-block;
-	float: left;
+    display: inline-block;
+    float: left;
 }
 
 .submit-form>div:nth-child(1) {
-	width: 40%;
+    width: 40%;
 }
 
 .submit-form>div:nth-child(2) {
-	width: 60%;
+    width: 60%;
 }
 
 .submit-form>div>button.am-btn>i.fa {
-	margin-right: 8px;
+    margin-right: 8px;
 }
 
 .item-goods-info {
-	text-align: left;
-	padding-left: 3px;
+    text-align: left;
+    padding-left: 3px;
 }
 
 #select-goods .am-modal-hd {
-	padding: 5px 10px 5px 10px;
-	background-color: #5eb95e;
-	font-weight: bold;
-	color: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(75, 188, 255, 0.58);
+    font-weight: bold;
+    color: #fff;
 }
 
 #select-goods .am-modal-bd {
-	font-size: 14px;
-	padding: 0;
-	border-bottom: none;
-	background-color: #fff;
-	text-align: left;
+    font-size: 14px;
+    padding: 0;
+    border-bottom: none;
+    background-color: #fff;
+    text-align: left;
 }
 
 #select-goods .am-modal-bd .categoryList {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #select-goods .am-modal-bd .categoryList>li {
-	margin: 3px;
-	padding: 0;
-	list-style: none;
-	background-color: rgb(213, 243, 213);
-	height: 30px;
-	border: 1px solid rgba(94, 185, 94, 0.68);
-	line-height: 30px;
+    margin: 3px;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(245, 245, 245);
+    height: 30px;
+    border: 1px solid rgb(234, 232, 232);
+    line-height: 30px;
 }
 
 #select-goods .am-modal-bd .categoryList>li.current-index {
-	background-color: rgb(94, 185, 94);
-	color: #FFFFFF;
+    background-color: rgba(204, 204, 204, 0.61);
+    color: #FFFFFF;
 }
 
 #select-goods .am-modal-bd input.am-form-field {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 #select-goods .am-modal-bd .am-tab-panel {
-	padding: 4px;
+    padding: 4px;
 }
 
 #select-goods .am-modal-bd .am-tab-panel .pull-left {
-	width: 30%;
-	border-right: 1px solid rgba(221, 221, 221, 0.57);
-	padding-right: 3px;
+    width: 30%;
+    border-right: 1px solid rgba(221, 221, 221, 0.57);
+    padding-right: 3px;
 }
 
 #select-goods .am-modal-bd .am-tab-panel .pull-right {
-	width: 69%;
+    width: 69%;
 }
 
-#select-goods .am-modal-bd .am-tab-panel .pull-right .am-badge,
-#select-goods .am-modal-bd .search-recently>.am-badge {
-	margin: 3px 5px;
+#select-goods .am-modal-bd .am-tab-panel .pull-right .am-badge, #select-goods .am-modal-bd .search-recently>.am-badge {
+    margin: 3px 5px;
 }
 
 #select-goods .am-modal-bd .clear-search-recently {
-	padding-top: 5px;
+    padding-top: 5px;
 }
 
-#select-goods .am-modal-bd .clear-search-recently,
-#select-goods .am-modal-bd .search-recently,
-#select-goods .am-modal-bd .search-result {
-	border-top: 1px solid #C0C0C0;
-	margin-top: 5px;
+#select-goods .am-modal-bd .clear-search-recently, #select-goods .am-modal-bd .search-recently, #select-goods .am-modal-bd .search-result {
+    padding: 5px 0;
+    margin: 5px 0;
 }
 
 .am-modal-alert>.am-modal-dialog {
-	width: 95%;
-	margin-left: -4px;
+    width: 98%;
+    margin-left: -5px;
+    height: 98%;
 }
 
-.goods .am-btn.am-disabled,
-.am-btn[disabled],
-fieldset[disabled] .am-btn {
-	opacity: 1;
-	font-size: 14px;
-	font-weight: bold;
+.search-result .am-badge {
+    margin: 0 5px;
 }
 
 .submit-form {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.am-checked>i.am-icon-check{
+   display: none;
 }

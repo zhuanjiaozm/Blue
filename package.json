@@ -1,0 +1,28 @@
+{
+  "name": "blue",
+  "version": "1.0.0",
+  "description": "仓库管理系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuanjiaozm/Blue.git"
+  },
+  "keywords": [
+    "仓库管理",
+    "jQuery",
+    "amazeui",
+    "angular"
+  ],
+  "author": "疯子乔",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuanjiaozm/Blue/issues"
+  },
+  "homepage": "https://github.com/zhuanjiaozm/Blue#readme",
+  "devDependencies": {
+    "gulp-inline-source": "^3.0.0"
+  }
+}
