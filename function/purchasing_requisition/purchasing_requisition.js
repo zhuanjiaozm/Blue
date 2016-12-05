@@ -42,7 +42,7 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
         //商品列表  页面加载完成后从服务端获取
         $http({
             method: 'POST',
-            url: '/YunERP/implProductTypeList',
+            url: basePath + '/implProductTypeList',
             data: {}
         }).success(function(data, status, headers, config) {
             $scope.categoryList = data.list;
@@ -99,7 +99,7 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
     //获取可选项目列表
     $http({
         method: 'POST',
-        url: '/YunERP/implProjectListByUser',
+        url: basePath + '/implProjectListByUser',
         data: {}
     }).success(function(data, status, headers, config) {
         $scope.projectList = data.list;
@@ -120,7 +120,7 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
         });
         $http({
                 method: 'POST',
-                url: '/YunERP/implSubmitPuarchsePlan',
+                url: basePath + '/implSubmitPuarchsePlan',
                 data: {
                     "list": $scope.goodList,
                     "form": $scope.theForm
