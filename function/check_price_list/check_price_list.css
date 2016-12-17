@@ -14,9 +14,11 @@ button.am-btn>i.fa {
     font-size: 24px;
     font-weight: bold;
 }
-.goods-list-title button{
-  height: 31px;
+
+.goods-list-title button {
+    height: 31px;
 }
+
 .search>.am-g {
     height: 37px;
     line-height: 37px;
@@ -36,15 +38,21 @@ button.am-btn>i.fa {
     border-bottom: 1px solid rgba(177, 168, 168, 0.21);
     line-height: 37px;
     height: 37px;
-  
 }
 
 .goods-list-title {
     font-weight: bold;
     line-height: 30px;
     padding-left: 10px;
-    background-color: rgba(106, 195, 134, 0.1);
+    background-color: rgb(230, 230, 230);
     border-bottom: 1px solid rgba(177, 168, 168, 0.21);
+}
+
+i.add {
+    line-height: 31px;
+    margin-right: 10px;
+    color: #5eb95e;
+    font-size: 20px;
 }
 
 ul.goods-list {
@@ -67,45 +75,54 @@ ul.goods-list>li>div {
     clear: both;
     font-size: 14px;
 }
-ul.goods-list>li>div.delete-button{
-	margin: 15px 0 0;
+
+ul.goods-list>li>div.delete-button {
+    margin: 15px 0 0;
 }
-ul.goods-list>li>div.delete-button i.fa{
-	margin-right: 5px;
+
+ul.goods-list>li>div.delete-button i.fa {
+    margin-right: 5px;
 }
+
 ul.goods-list>li>div>input {
     border: none;
     border-bottom: 1px solid rgba(177, 168, 168, 0.21);
     line-height: 25px;
     height: 25px;
-      width: 200px;
+    width: 200px;
 }
 
 ul.goods-list>li>div>button {
     margin-top: 5px;
 }
-div.submit{
-	position: fixed;
+
+div.submit {
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
-.am-selected{
-	line-height: 27px;
-}
-.am-btn{
-	padding: 2px 15px;
-	margin-top: -3px;
-}
-.am-selected-list li{
-	    padding: 1px 10px;
-}
-.am-selected-list .am-icon-check{
-	top: 0;
-}
-.am-selected-search{
-	padding-bottom: 0;
-}
-.am-selected-search .am-input-sm{
-	padding: 4px;
+
+.am-selected {
+    line-height: 27px;
 }
 
+ul.goods-list>li  .am-btn {
+    padding: 2px 15px;
+    /*margin-top: -3px;*/
+}
+
+.am-selected-list li {
+    padding: 1px 10px;
+}
+
+.am-selected-list .am-icon-check {
+    top: 0;
+}
+
+.am-selected-search {
+    padding-bottom: 0;
+}
+
+.am-selected-search .am-input-sm {
+    padding: 4px;
+}

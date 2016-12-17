@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="./purchasing_requisition_draft.css">
     </head>
 
-    <body ng-controller="purchasing_requisition_draft-controller">
+    <body ng-controller="purchasing-requisition-draft-controller">
         <div class="am-g purchasing-requisition-draft-title">
             <div class="am-u-sm-2 go-back">
                 <a href="javascript:history.back(-1);">
@@ -57,33 +57,31 @@
                     <i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
                     <small>创建时间:</small>
                     <i>
-                        <span ng-bind="purchasingRequisition.creatTime"></span>
+                        <span ng-bind="purchasingRequisition.create_time | date:'yyyy-MM-dd'"></span>
                     </i>
                     <span class="pull-right purchasing-goods-operate">
                         <i class="fa fa-pencil-square-o am-text-warning" aria-hidden="true"></i>
-                        <i class="fa fa-times  am-text-danger" aria-hidden="true" ng-click="deletePurchasingRequisition(purchasingRequisition)"></i>
+                        <i class="fa fa-times  am-text-danger" aria-hidden="true" ng-click="deleteDraft(purchasingRequisition.pch_plan_id)"></i>
                     </span>
                 </div>
-                <div ng-repeat="purchasingGoods in purchasingRequisition.goodsList" class="purchasingGoods">
-                    {{$index+1}}.<label ng-bind="purchasingGoods.name"></label>:
-                    <span ng-bind="purchasingGoods.account+'斤'" class="am-text-success"></span>
+                <div ng-repeat="purchasingGoods in purchasingRequisition.goodlist" class="purchasingGoods">
+                    {{$index+1}}.<label ng-bind="purchasingGoods.product_name"></label>:
+                    <span ng-bind="purchasingGoods.req_qty" class="am-text-success"></span>
+                    <i ng-bind="'('+{1:'斤',2:'公斤',0:'瓶'}[purchasingGoods.quality]+')'" ></i>
                 </div>
             </li>
         </ul>
-        <div class="am-modal am-modal-confirm" tabindex="-1" id="deletePurchasingRequisition">
+        <!--在这里编写你的代码-->
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
             <div class="am-modal-dialog">
                 <!--<div class="am-modal-hd">Amaze UI</div>-->
-                <div class="am-modal-bd">
-                    你确定要删除吗？
-                </div>
+                <div class="am-modal-bd"></div>
                 <div class="am-modal-footer">
                     <span class="am-modal-btn" data-am-modal-cancel>取消</span>
                     <span class="am-modal-btn" data-am-modal-confirm>确定</span>
                 </div>
             </div>
         </div>
-        <!--在这里编写你的代码-->
-
         <!--[if (gte IE 9)|!(IE)]><!-->
         <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
         <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>

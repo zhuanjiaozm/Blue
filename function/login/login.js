@@ -4,13 +4,14 @@ app.controller('login', function($scope, $http) {
         $scope.data = {
             errMsg: ''
         };
+      //  console.log(user);
         $http({
             method: 'POST',
-            url: basePath+'/implLogin',
+            url: basePath + '/implLogin',
             data: user
         }).success(function(data, status, headers, config) {
-            if (data.userinfo) {
-                window.location.href = "../profile/index.html";
+            if (data.userinfo.user_id) {
+               window.location.href = "../profile/index.html";
             } else {
                 $scope.data.errMsg = '系统错误，请联系管理员！';
             }

@@ -2,8 +2,7 @@ var app = angular.module('app', [])
     .controller('profile-controller', function($scope, $http) {
         $http({
             method: 'POST',
-            url: basePath + '/implUserInfo',
-            data: {}
+            url: basePath + '/implUserInfo'
         }).success(function(data, status, headers, config) {
             $scope.userinfo = data.userinfo;
         }).error(function(data, status, headers, config) {

@@ -55,17 +55,17 @@
                 <a data-am-collapse="{parent: '#collapase-nav-1', target: '#user-nav-{{$index}}'}" ng-click="isopen=!isopen">
                     <i class="fa fa-calendar am-text-primary" aria-hidden="true"></i>
                     到货时间:
-                    <label for="" ng-bind="purchasingRequisition.arriveTime"></label>
+                    <label for="" ng-bind="purchasingRequisition.need_time"></label>
                     <strong class="am-text-danger">（明天）</strong>
                     <i class="am-icon-angle-down am-fr am-margin-down" ng-class="{true: 'am-icon-angle-down', false: 'am-icon-angle-up'}[isopen]"></i>
                 </a>
                 <ul class="am-list am-collapse admin-sidebar-sub am-in" id="user-nav-{{$index}}">
-                    <li ng-repeat="purchasingRequisitionObject in purchasingRequisition.goodsList">
+                    <li>
                         <div>
-                            <i class="fa fa-fort-awesome" aria-hidden="true"></i>采购单位：<b ng-bind="purchasingRequisitionObject.department.name"></b>
+                            <i class="fa fa-fort-awesome" aria-hidden="true"></i>采购单位:{{purchasingRequisition.department.name}}
                         </div>
                         <div>
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>申请时间：{{purchasingRequisitionObject.requestTime}}
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>申请时间:{{purchasingRequisition.create_time}}
                         </div>
                         <div>
                             <i class="fa fa-shopping-basket" aria-hidden="true"></i>采购需求:
@@ -85,7 +85,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat=" goondsObj in purchasingRequisitionObject.goodsArray">
+                                <tr ng-repeat="goondsObj in purchasingRequisition.itemlist">
                                     <td>{{$index+1}}</td>
                                     <td>{{goondsObj.goods.name}}</td>
                                     <td>{{goondsObj.account}}</td>
@@ -133,16 +133,27 @@
                 </div>
             </div>
         </div>
-
         <!--在这里编写你的代码-->
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+            <div class="am-modal-dialog">
+                <!--<div class="am-modal-hd">Amaze UI</div>-->
+                <div class="am-modal-bd"></div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                    <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                </div>
+            </div>
+        </div>
+        <div infinite-scroll="getMore()" infinite-scroll-disabled='busy' infinite-scroll-distance='1'>
+            <!--在这里编写你的代码-->
 
-        <!--[if (gte IE 9)|!(IE)]><!-->
-        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
-        <script src="../../bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
-        <!--<![endif]-->
-        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-        <script src="./purchasing_requisition_list.js"></script>
-    </body>
+            <!--[if (gte IE 9)|!(IE)]><!-->
+            <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+            <script src="../../bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+            <!--<![endif]-->
+            <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+            <script src="./purchasing_requisition_list.js"></script>
+        </body>
 
-</html>
+    </html>

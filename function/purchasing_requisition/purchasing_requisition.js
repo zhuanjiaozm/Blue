@@ -1,5 +1,38 @@
 var app = angular.module('app', []);
-app.controller('purchasing-requisition-controller', function($scope, $http) {
+app.service('goodsListService', ['$http', function($http, responseForUser) {
+    this.save = function(savaObj) {
+        console.log("savaObj:", savaObj);
+        $http({
+                method: 'POST',
+                url: basePath + '/implSubmitPuarchsePlan',
+                data: savaObj
+            })
+            .success(function(data, status, headers, config) {
+                if (data.errMsg) {
+                    $('#my-confirm').find('.am-modal-bd').html(data.errMsg);
+                    $('#my-confirm').modal({});
+                } else {
+                    $('#my-confirm').find('.am-modal-bd').html("发生系统错误，请联系管理员");
+                    $('#my-confirm').modal({});
+                }
+            })
+            .error(function(data, status, headers, config) {
+                console.log(status);
+                responseForUser.alertMsg('发生网络错误，请联系管理员');
+                $('#my-confirm').modal({});
+            });
+    };
+}]);
+app.service('responseForUser', ['$http', function($http) {
+    this.alertMsg = function(msg) {
+        $('#my-confirm').find('.am-modal-bd').html(msg);
+    };
+}]);
+
+app.controller('purchasing-requisition-controller', function($scope, $http, goodsListService, responseForUser) {
+    $scope.alertMsg = function(msg) {
+        responseForUser.alertMsg(msg);
+    };
     //默认可以点击添加商品按钮
     $scope.goodList = [];
     $scope.goodList.push({
@@ -24,17 +57,14 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
         });
     };
     $scope.deleteGoods = function(goods) {
-
+        responseForUser.alertMsg("确定要删除吗？");
         $('#my-confirm').modal({
             onConfirm: function(options) {
                 $scope.goodList.splice($scope.goodList.indexOf(goods), 1);
                 $scope.$apply($scope);
-                //console.info("商品列表:", $scope.goodList);
             }
         });
     };
-
-
     var itemSelectedForSearchGoodsIndex = 0;
     //选择商品  开始
     $scope.selectGoods = function(index) {
@@ -45,6 +75,10 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
             url: basePath + '/implProductTypeList',
             data: {}
         }).success(function(data, status, headers, config) {
+            if (!data.list.length) {
+                responseForUser.alertMsg('获取商品列表发生异常');
+                $('#my-confirm').modal({});
+            }
             $scope.categoryList = data.list;
             //  console.log(data);
             $scope.recentSearch = data.hotlist;
@@ -59,10 +93,11 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
             //  console.log("所有商品列表：", $scope.allCategory);
         }).error(function(data, status, headers, config) {
             console.error('获取商品分类发生网络错误');
+            responseForUser.alertMsg('获取商品分类发生网络错误');
+            $('#my-confirm').modal({});
         });
         $("#select-goods").modal();
     };
-
     $scope.searchGoodsByKeyWord = function(keyword) {
         //console.log("搜索商品关键字：", keyword);
         $scope.searchResult = [];
@@ -79,8 +114,10 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
 
     //点击搜索结果关闭弹出框
     $scope.selectedGoods = function(selectGodos) {
+        console.log("当前选择的商品是：", selectGodos);
         $scope.goodList[itemSelectedForSearchGoods].good = selectGodos;
-        console.log("选择的商品是：", selectGodos);
+
+        //console.log("选择的商品是：", selectGodos);
         //保存商品名称完成后不可编辑当前商品
 
         $("#select-goods").modal('close');
@@ -103,35 +140,34 @@ app.controller('purchasing-requisition-controller', function($scope, $http) {
         data: {}
     }).success(function(data, status, headers, config) {
         $scope.projectList = data.list;
-        //$('#project-select').selected();
-        console.log('获取可选项目列表', data.list);
+        if (!data.list.length) {
+            responseForUser.alertMsg('获取可选项目列表发生异常');
+            $('#my-confirm').modal({});
+        }
     }).error(function(data, status, headers, config) {
-        console.error('获取可选项目列表发生网络错误');
+        responseForUser.alertMsg('获取可选项目列表发生网络错误');
+        $('#my-confirm').modal({});
     });
 
 
 
 
     //保存采购申请
-    $scope.save = function() {
+    $scope.save = function(statusID) {
         angular.forEach($scope.goodList, function(data, index, array) {
             $scope.goodList[index].product_id = data.good.product_id;
             $scope.goodList[index].good = null;
         });
-        $http({
-                method: 'POST',
-                url: basePath + '/implSubmitPuarchsePlan',
-                data: {
-                    "list": $scope.goodList,
-                    "form": $scope.theForm
-                }
-            })
-            .success(function(data, status, headers, config) {
-
-            })
-            .error(function(data, status, headers, config) {
-                console.error('获取商品分类发生网络错误');
-            });
+        var savaObj = {
+            "list": $scope.goodList,
+            "form": $scope.theForm,
+            "statusID": statusID
+        };
+        var saveResponse = goodsListService.save(savaObj);
     };
 });
+
+
+
+
 angular.bootstrap(document, ['app']);
