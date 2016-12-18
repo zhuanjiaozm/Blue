@@ -1,0 +1,19 @@
+
+.am-panel-group .am-panel-hd+.am-panel-collapse .am-panel-bd{
+	padding: 0;
+	border:none;
+}
+.am-panel-bd .am-table {
+	border-collapse:collapse;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.am-panel-hd h4{
+	font-size: 14px;
+
+}
+
+.am-panel-hd .am-btn{
+	font-size: 12px;
+	margin-top: -3px;
+}

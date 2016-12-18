@@ -1,49 +1,53 @@
 .procurement-queue-title {
-	margin-top: 5px;
-	height: 47px;
-	line-height: 37px;
-	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
-	font-size: 24px;
-	font-weight: bold;
-	/*margin-bottom: 10px;*/
+    margin-top: 5px;
+    height: 47px;
+    line-height: 37px;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+    font-size: 24px;
+    font-weight: bold;
+    /*margin-bottom: 10px;*/
 }
 
 .procurement-title {
-	padding: .6rem 1.25rem;
-	background-color: rgba(189, 184, 184, 0.96);
-	border-bottom: 1px #ddd solid;
-	border-top: 1px #ddd solid;
-	font-size: 14px;
+    padding: .6rem 1.25rem;
+    background-color: rgba(189, 184, 184, 0.96);
+    border-bottom: 1px #ddd solid;
+    border-top: 1px #ddd solid;
+    font-size: 14px;
 }
 
 .am-list {
-	border-top: none;
-	margin: 0;
+    border-top: none;
+    margin: 0;
+}
+
+.the-title {
+    line-height: 40px;
+    padding-left: 5px;
 }
 
 .am-list>li {
-	/*border-bottom: 1px solid #847c7c;*/
-	padding: 5px;
-	background-color: rgba(221, 221, 221, 0.36);
-	margin-bottom: 10px;
-	    box-shadow: 2px 3px 10px 0 rgba(2, 4, 7, .2);
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 10px;
 }
 
 .am-list>li:first-of-type {
-	border-top: none;
+    border-top: none;
 }
 
 .am-list>li>div .am-badge {
-	margin: 0 5px;
+    margin: 0 5px;
 }
 
 .am-list>li>div.goods-name {
-	/*height: 37px;
+    /*height: 37px;
 	line-height: 37px;*/
-	padding-bottom: 8px;
-	border-bottom: 1px dashed #b1a8a8;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #b1a8a8;
 }
-.am-btn{
-	padding: 2px 5px;
-	font-size: 10px;
+
+.am-btn {
+    padding: 2px 5px;
+    font-size: 10px;
 }

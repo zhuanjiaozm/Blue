@@ -1,8 +1,8 @@
 var app = angular.module("app", []);
-app.controller("procurement-list-controller", function($scope, $http) {
+app.controller("check-price-controller", function($scope, $http) {
     $http({
         method: 'POST',
-        url: basePath + '/implcaigoulist'
+        url: basePath + '/implproductpriceList'
     }).success(function(data, status, headers, config) {
         if (data.statusCode === 200) {
             $scope.rep = data.list;

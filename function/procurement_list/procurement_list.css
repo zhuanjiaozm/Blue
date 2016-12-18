@@ -1,41 +1,49 @@
-.procurement-list-title {
-	margin-top: 5px;
-	height: 47px;
-	line-height: 37px;
-	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
-	font-size: 24px;
-	font-weight: bold;
+.am-panel-group {
+    margin-bottom: 15px;
+}
+
+.am-list {
+    margin-bottom: 0;
 }
 
 .am-panel-default>.am-panel-hd {
-	background-color: #d8d4d4;
-	/*height: 56px;
+    /*background-color: #d8d4d4;*/
+    /*height: 56px;
 	line-height: 42px;*/
 }
 
 .am-panel {
-	border: none;
-	box-shadow: none;
-	-webkit-box-shadow: none;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 .am-panel-bd {
-	margin: 0;
-	padding: 5px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.am-panel-default>.am-panel-hd {
+    background-color: rgba(204, 204, 204, 0.61);
+
 }
 
 .am-panel-bd .am-list>li {
-	border: none;
-	border-bottom: 1px solid rgba(177, 168, 168, 0.5);
-	margin-bottom: 2px;
-	padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(177, 168, 168, 0.5);
+    /*margin-bottom: 2px;
+	padding-bottom: 5px;*/
 }
-.am-btn i{
-	margin-right: 5px;
+
+.am-btn i {
+    margin-right: 5px;
 }
-.operate{
-	margin: 15px 0 10px;
+
+.operate {
+    margin: 15px 0 10px;
 }
-.am-badge{
-	margin: 0 5px;
+
+.am-badge {
+    margin: 0 5px;
 }

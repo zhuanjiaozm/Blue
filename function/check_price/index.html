@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>采购汇总-YunERP管理系统</title>
+        <title>询价单列表页-YunERP管理系统</title>
         <!-- Set render engine for 360 browser -->
         <meta name="renderer" content="webkit">
         <!-- No Baidu Siteapp-->
@@ -32,10 +32,10 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
         <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
         <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./show_all_procurement.css">
+        <link rel="stylesheet" href="./check_price.css">
     </head>
 
-    <body ng-controller="show-all-procurement-controller">
+    <body ng-controller="check-price-controller">
         <div class="am-g head-title">
             <div class="am-u-sm-2 go-back">
                 <a href="javascript:history.back(-1);">
@@ -43,25 +43,25 @@
                 </a>
             </div>
             <div class="am-u-sm-8 am-text-center">
-                采购汇总
+                询价单列表
             </div>
             <div class="am-u-sm-2 am-text-right profile_edit">
-                <a href="../quotation_of_prices/index.html">
+                <!-- <a href="../quotation_of_prices/index.html">
                     <i class="fa fa-superpowers" aria-hidden="true"></i>
-                </a>
+                </a> -->
             </div>
         </div>
-        <div class="am-panel-group" id="accordion-{{$index+1}}" ng-repeat="item in list">
+        <div class="am-panel-group" id="accordion">
             <div class="am-panel am-panel-default">
                 <div class="am-panel-hd">
-                    <h4 class="am-panel-title am-text-danger" data-am-collapse="{parent: '#accordion', target: '#do-not-say-{{$index+1}}'}">
-                        <span ng-bind="item.need_time"></span>
-                        <a type="button" class="pull-right" href="../procurement_queue/index.html?need_time={{item.need_time}}">
+                    <h4 class="am-panel-title am-text-danger" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
+                        2016.11.18（周一）明天
+                        <a type="button" class="pull-right" href="../procurement_queue/index.html?ask_id={{}}">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </a>
                     </h4>
                 </div>
-                <div id="do-not-say-{{$index+1}}" class="am-panel-collapse am-collapse am-in">
+                <div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
                     <div class="am-panel-bd am-scrollable-horizontal">
                         <table class="am-table am-table-bordered am-table-striped am-text-nowrap am-table-compact">
                             <thead>
@@ -73,11 +73,29 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="good in item.goodlist">
-                                    <td ng-bind="$index+1"></td>
-                                    <td ng-bind="good.product_name"></td>
-                                    <td ng-bind="good.req_qty"></td>
-                                    <td ng-bind="good.quality"></td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>带白菜</td>
+                                    <td>1213</td>
+                                    <td>斤</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>佛山花椰菜</td>
+                                    <td>211</td>
+                                    <td>斤</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>土豆豆</td>
+                                    <td>893</td>
+                                    <td>斤</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>洋葱</td>
+                                    <td>129</td>
+                                    <td>斤</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -85,7 +103,6 @@
                 </div>
             </div>
         </div>
-
         <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
             <div class="am-modal-dialog">
                 <!--<div class="am-modal-hd">Amaze UI</div>-->
@@ -102,7 +119,7 @@
         <script src="../../bower_components/angular/angular.min.js" charset="utf-8"></script>
         <!--<![endif]-->
         <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-        <script src="./show_all_procurement.js"></script>
+        <script src="./check_price.js"></script>
     </body>
 
 </html>

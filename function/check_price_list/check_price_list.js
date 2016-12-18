@@ -77,8 +77,8 @@ app.controller("check-price-list-title", function($scope, checkPriceListTitleSer
     $scope.submit = function() {
         $scope.req.list = $scope.goodList;
         checkPriceListTitleService.submit($scope.req).then(function(data) {
-            if (data !== 0) {
-                window.location.href = "../supplier_select/index.html?ask_id=" + data;
+            if (data.statusCode === 200) {
+                window.location.href = "../home/index.html";
             }
         }, function(data) {
 

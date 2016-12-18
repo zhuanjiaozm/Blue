@@ -63,7 +63,7 @@
         <ul class="am-list">
             <li ng-repeat="item in supplierList">
                 <label class="am-checkbox">
-                    <input type="checkbox" value="{{item.supplier_id}}" data-am-ucheck  ng-model="req.supplier_id" name="supplier"><b ng-bind="item.supplier"></b>
+                    <input type="checkbox" value="{{item.supplier_id}}" data-am-ucheck  ng-checked="isSelected(item.supplier_id)" ng-click="updateSelection($event,item.supplier_id)" name="supplier"><b ng-bind="item.supplier"></b>
                 </label>
             </li>
         </ul>

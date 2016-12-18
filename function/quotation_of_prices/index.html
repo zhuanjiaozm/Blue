@@ -1,171 +1,179 @@
 <!doctype html>
 <html class="no-js">
 
-	<head>
-		<meta charset="utf-8">
-		<!-- 全屏显示 开始设置-->
-		<meta name="full-screen" content="yes" />
-		<meta name="x5-fullscreen" content="true" />
-		<!-- 全屏显示 结束设置-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<title>报价-YunERP管理系统</title>
-		<!-- Set render engine for 360 browser -->
-		<meta name="renderer" content="webkit">
-		<!-- No Baidu Siteapp-->
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="" />
-		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
-		<meta name="msapplication-TileColor" content="#0e90d2">
-		<!-- 隐藏状态栏/设置状态栏颜色 -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
-		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="../../bower_components/jedate/skin/jedate.css">
-		<link rel="stylesheet" type="text/css" href="./quotation_of_prices.css"/>
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <!-- 全屏显示 开始设置-->
+        <meta name="full-screen" content="yes"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <!-- 全屏显示 结束设置-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>报价-YunERP管理系统</title>
+        <!-- Set render engine for 360 browser -->
+        <meta name="renderer" content="webkit">
+        <!-- No Baidu Siteapp-->
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <link rel="icon" type="image/png" href="../../img/common/favicon.png">
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+        <meta name="msapplication-TileColor" content="#0e90d2">
+        <!-- 隐藏状态栏/设置状态栏颜色 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+        <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../bower_components/jedate/skin/jedate.css">
+        <link rel="stylesheet" type="text/css" href="./quotation_of_prices.css"/>
+    </head>
 
-	<body>
-		<div class="am-g quotation-of-prices-title">
-			<div class="am-u-sm-2 go-back">
-				<a href="javascript:history.back(-1);">
-					<i class="fa fa-chevron-left" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="am-u-sm-8 am-text-center">
-				报价
-			</div>
-			<div class="am-u-sm-2 am-text-right profile_edit">
-				<!-- <a href="../purchasing_requisition/index.html">
+    <body>
+        <div class="am-g head-title">
+            <div class="am-u-sm-2 go-back">
+                <a href="javascript:history.back(-1);">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="am-u-sm-8 am-text-center">
+                报价
+            </div>
+            <div class="am-u-sm-2 am-text-right profile_edit">
+                <!-- <a href="../purchasing_requisition/index.html">
 								<i class="fa fa-plus" aria-hidden="true"></i>
 						</a> -->
-			</div>
-		</div>
-		<div class="search">
-			<div class="am-g">
-				<span>
+            </div>
+        </div>
+        <div class="search">
+            <div class="am-g">
+                <span>
                     <i class="fa fa-clock-o" aria-hidden="true"></i>供货时间：</span>
-				<input type="text" placeholder="请点选截止时间"  readonly="" id="skingreen">
-			</div>
-			<div class="am-g">
-				<span>
+                <input type="text" placeholder="请点选截止时间" readonly="" id="skingreen">
+            </div>
+            <div class="am-g">
+                <span>
                     <i class="fa fa-bars" aria-hidden="true"></i>供货说明：</span>
-				<input type="text" placeholder="请输入附属说明" >
-			</div>
-		</div>
-		<ul class="am-list goods-list am-list-striped">
-			<li>
-				<div id="goods-name">
-					<i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
-				</div>
-				<div>
-					<span class="title">采购量:</span><label for="" class="am-text-success">150</label>斤
-				</div>
-				<div>
-					<span class="title">报价:</span><label for="" class="am-text-success">2.5</label>元/斤
-				</div>
-				<div>
-					<span class="title">供应量:</span><input type="number" />斤<span class="am-badge am-badge-success am-radius">充足</span>
-				</div>
-				<div class="delete-button">
-					<!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
+                <input type="text" placeholder="请输入附属说明">
+            </div>
+        </div>
+        <ul class="am-list goods-list am-list-striped">
+            <li>
+                <div id="goods-name">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
+                </div>
+                <div>
+                    <span class="title">采购量:</span>
+                    <label for="" class="am-text-success">150</label>斤
+                </div>
+                <div>
+                    <span class="title">报价:</span>
+                    <label for="" class="am-text-success">2.5</label>元/斤
+                </div>
+                <div>
+                    <span class="title">供应量:</span><input type="number"/>斤<span class="am-badge am-badge-success am-radius">充足</span>
+                </div>
+                <div class="delete-button">
+                    <!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
 						<i class="fa fa-check" aria-hidden="true"></i>
 						充足</button>-->
-					<button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
-						<i class="fa fa-trash-o" aria-hidden="true"></i>
-						删除</button>
-				</div>
-			</li>
-			<li>
-				<div id="goods-name">
-					<i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
-				</div>
-				<div>
-					<span class="title">采购量:</span><label for="" class="am-text-success">150</label>斤
-				</div>
-				<div>
-					<span class="title">报价:</span><label for="" class="am-text-success">2.5</label>元/斤
-				</div>
-				<div>
-					<span class="title">供应量:</span><input type="number" />斤<span class="am-badge am-badge-success am-radius">充足</span>
-				</div>
-				<div class="delete-button">
-					<!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
+                    <button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        删除</button>
+                </div>
+            </li>
+            <li>
+                <div id="goods-name">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
+                </div>
+                <div>
+                    <span class="title">采购量:</span>
+                    <label for="" class="am-text-success">150</label>斤
+                </div>
+                <div>
+                    <span class="title">报价:</span>
+                    <label for="" class="am-text-success">2.5</label>元/斤
+                </div>
+                <div>
+                    <span class="title">供应量:</span><input type="number"/>斤<span class="am-badge am-badge-success am-radius">充足</span>
+                </div>
+                <div class="delete-button">
+                    <!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
 						<i class="fa fa-check" aria-hidden="true"></i>
 						充足</button>-->
-					<button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
-						<i class="fa fa-trash-o" aria-hidden="true"></i>
-						删除</button>
-				</div>
-			</li>
-			<li>
-				<div id="goods-name">
-					<i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
-				</div>
-				<div>
-					<span class="title">采购量:</span><label for="" class="am-text-success">150</label>斤
-				</div>
-				<div>
-					<span class="title">报价:</span><label for="" class="am-text-success">2.5</label>元/斤
-				</div>
-				<div>
-					<span class="title">供应量:</span><input type="number" />斤<span class="am-badge am-badge-success am-radius">充足</span>
-				</div>
-				<div class="delete-button">
-					<!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
+                    <button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        删除</button>
+                </div>
+            </li>
+            <li>
+                <div id="goods-name">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
+                </div>
+                <div>
+                    <span class="title">采购量:</span>
+                    <label for="" class="am-text-success">150</label>斤
+                </div>
+                <div>
+                    <span class="title">报价:</span>
+                    <label for="" class="am-text-success">2.5</label>元/斤
+                </div>
+                <div>
+                    <span class="title">供应量:</span><input type="number"/>斤<span class="am-badge am-badge-success am-radius">充足</span>
+                </div>
+                <div class="delete-button">
+                    <!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
 						<i class="fa fa-check" aria-hidden="true"></i>
 						充足</button>-->
-					<button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
-						<i class="fa fa-trash-o" aria-hidden="true"></i>
-						删除</button>
-				</div>
-			</li>
-			<li>
-				<div id="goods-name">
-					<i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
-				</div>
-				<div>
-					<span class="title">采购量:</span><label for="" class="am-text-success">150</label>斤
-				</div>
-				<div>
-					<span class="title">报价:</span><label for="" class="am-text-success">2.5</label>元/斤
-				</div>
-				<div>
-					<span class="title">供应量:</span><input type="number" />斤<span class="am-badge am-badge-success am-radius">充足</span>
-				</div>
-				<div class="delete-button">
-					<!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
+                    <button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        删除</button>
+                </div>
+            </li>
+            <li>
+                <div id="goods-name">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>.<strong>大白菜</strong>
+                </div>
+                <div>
+                    <span class="title">采购量:</span>
+                    <label for="" class="am-text-success">150</label>斤
+                </div>
+                <div>
+                    <span class="title">报价:</span>
+                    <label for="" class="am-text-success">2.5</label>元/斤
+                </div>
+                <div>
+                    <span class="title">供应量:</span><input type="number"/>斤<span class="am-badge am-badge-success am-radius">充足</span>
+                </div>
+                <div class="delete-button">
+                    <!--<button type="button" class="am-btn am-btn-success am-round am-btn-xs">
 						<i class="fa fa-check" aria-hidden="true"></i>
 						充足</button>-->
-					<button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
-						<i class="fa fa-trash-o" aria-hidden="true"></i>
-						删除</button>
-				</div>
-			</li>
-		</ul>
-		<div class="submit">
-			<a  class="am-btn am-btn-success am-btn-block"  href="">
-				<i class="fa fa-upload" aria-hidden="true"></i>
-				提交报价</a>
-		</div>
-		<!--[if (gte IE 9)|!(IE)]><!-->
-		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
-		<script src="../../bower_components/jedate/jquery.jedate.min.js" type="text/javascript" charset="utf-8"></script>
-		<!--<![endif]-->
-		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-		<script src="./quotation_of_prices.js"></script>
-	</body>
+                    <button type="button" class="am-btn am-btn-default am-btn-block am-btn-xs">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        删除</button>
+                </div>
+            </li>
+        </ul>
+        <div class="submit">
+            <a class="am-btn am-btn-success am-btn-block" href="">
+                <i class="fa fa-upload" aria-hidden="true"></i>
+                提交报价</a>
+        </div>
+        <!--[if (gte IE 9)|!(IE)]><!-->
+        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+        <script src="../../bower_components/jedate/jquery.jedate.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--<![endif]-->
+        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+        <script src="./quotation_of_prices.js"></script>
+    </body>
 
 </html>
