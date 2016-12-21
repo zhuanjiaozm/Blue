@@ -1,165 +1,142 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="app">
 
-	<head>
-		<meta charset="utf-8">
-		<!-- 全屏显示 开始设置-->
-		<meta name="full-screen" content="yes" />
-		<meta name="x5-fullscreen" content="true" />
-		<!-- 全屏显示 结束设置-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<title>采购数据录入-YunERP管理系统</title>
-		<!-- Set render engine for 360 browser -->
-		<meta name="renderer" content="webkit">
-		<!-- No Baidu Siteapp-->
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<link rel="icon" type="image/png" href="../../img/common/favicon.png">
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="" />
-		<link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
-		<meta name="msapplication-TileColor" content="#0e90d2">
-		<!-- 隐藏状态栏/设置状态栏颜色 -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
-		<link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
-		<link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./purchasing_data_record.css">
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <!-- 全屏显示 开始设置-->
+        <meta name="full-screen" content="yes"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <!-- 全屏显示 结束设置-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>采购数据录入-YunERP管理系统</title>
+        <!-- Set render engine for 360 browser -->
+        <meta name="renderer" content="webkit">
+        <!-- No Baidu Siteapp-->
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <link rel="icon" type="image/png" href="../../img/common/favicon.png">
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content=""/>
+        <link rel="apple-touch-icon-precomposed" href="../../img/common/app-icon72x72@2x.png">
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="../../img/common/app-icon72x72@2x.png">
+        <meta name="msapplication-TileColor" content="#0e90d2">
+        <!-- 隐藏状态栏/设置状态栏颜色 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <link rel="stylesheet" href="../../bower_components/amazeui/dist/css/amazeui.min.css">
+        <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./purchasing_data_record.css">
+    </head>
 
-	<body>
-		<div class="am-g purchasing-data-record-title">
-			<div class="am-u-sm-2 go-back">
-				<a href="javascript:history.back(-1);">
-					<i class="fa fa-chevron-left" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="am-u-sm-8 am-text-center">
-				采购数据录入
-			</div>
-			<div class="am-u-sm-2 am-text-right profile_edit">
-				<!-- <a href="../purchasing_requisition/index.html">
+    <body ng-controller="purchasing-data-record-controller">
+        <div class="am-g head-title">
+            <div class="am-u-sm-2 go-back">
+                <a href="javascript:history.back(-1);">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="am-u-sm-8 am-text-center">
+                采购数据录入
+            </div>
+            <div class="am-u-sm-2 am-text-right profile_edit">
+                <!-- <a href="../purchasing_requisition/index.html">
 								<i class="fa fa-plus" aria-hidden="true"></i>
 						</a> -->
-			</div>
-		</div>
-		<div class="goods-info">
-			<div class="am-g">
-				<div class="am-u-sm-12">
-					商品：<label for="" class="am-text-primary">大白菜</label>
-				</div>
+            </div>
+        </div>
+        <div class="goods-info">
+            <div class="am-g">
+                <div class="am-u-sm-12">
+                    商品：<label for="" class="am-text-primary" ng-bind="rep.product_name"></label>
+                </div>
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-6">
+                    计划数量：<label for="" ng-bind="rep.req_qty"></label>({{rep.unit_name}})
+                </div>
+                <div class="am-u-sm-6">
+                    价格：<label for="" ng-bind="rep.price_ref"></label>(元/{{rep.unit_name}})
+                </div>
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-11">
+                    供货商：<label for="" ng-bind="rep.supplier">果蔬批发市场</label>
+                </div>
+                <!-- <div class="am-u-sm-1">
+                    <i class="fa fa-map-marker am-text-success" aria-hidden="true"></i>
+                </div> -->
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-12 am-text-truncate">
+                    地址：<label for="" ng-bind="rep.address"></label>
+                </div>
 
-			</div>
-			<div class="am-g">
-				<div class="am-u-sm-6">
-					计划数量：<label for="">180</label>(斤)
-				</div>
-				<div class="am-u-sm-6">
-					价格：<label for="">1.6</label>(元/斤)
-				</div>
-			</div>
-			<div class="am-g">
-				<div class="am-u-sm-11">
-					供货商：<label for="">果蔬批发市场</label>
-				</div>
-				<div class="am-u-sm-1">
-					<i class="fa fa-map-marker am-text-success" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="am-g">
-				<div class="am-u-sm-12 am-text-truncate">
-					地址：<label for="">广东省广州市白云区石井市场ABCDFE号</label>
-				</div>
+            </div>
+        </div>
 
-			</div>
-		</div>
+        <div class="title">
+            <strong class="am-text-lg">打包明细</strong>
+        </div>
+        <table class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>需求</th>
+                    <th>实际</th>
+                    <th>仓库</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in rep.prolist">
+                    <td ng-bind="$index+1"></td>
+                    <td ng-bind="item.req_qty1"></td>
+                    <td>
+                        <input type="text" ng-model="item.buy_qty" ng-init="item.buy_qty=item.req_qty1" ng-change="updatePrice()">
+                    </td>
+                    <td ng-bind="item.project_name"></td>
+                </tr>
+                <tr class="am-active">
+                    <td>合计</td>
+                    <td ng-bind="toReq"></td>
+                    <td ng-bind="toAll"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
-		<div class="title">
-			<strong class="am-text-lg">打包明细</strong>
-		</div>
-		<table class="am-table am-table-bordered am-table-striped am-table-compact">
-			<thead>
-				<tr>
-					<th></th>
-					<th>需求(斤)</th>
-					<th>实际(斤)</th>
-					<th>仓库</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>223</td>
-					<td>223</td>
-					<td>第一食堂</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>223</td>
-					<td>223</td>
-					<td>第二食堂</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>233</td>
-					<td>230</td>
-					<td>第三食堂</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>321</td>
-					<td>210</td>
-					<td>第四食堂</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>543</td>
-					<td>590</td>
-					<td>第五食堂</td>
-				</tr>
-				<tr class="am-success">
-					<td>合计</td>
-					<td>8921</td>
-					<td>8900</td>
-					<td></td>
-				</tr>
-			</tbody>
-		</table>
+        <div class="form">
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    *单价(元/{{rep.unit_name}})
+                </span>
+                <input type="text" class="am-form-field" placeholder="" ng-model="req.price_buy" ng-change="updatePrice()">
+            </div>
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    *应付（元）
+                </span>
+                <input type="text" class="am-form-field" placeholder="" ng-model="toReqying" disabled="disabled">
+            </div>
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    *实付（元）
+                </span>
+                <input type="text" class="am-form-field" placeholder="" ng-model="toInf" disabled="disabled">
+            </div>
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    *支付方式
+                </span>
 
-		<div class="form">
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					*单价(元/斤)
-				</span>
-				<input type="text" class="am-form-field" placeholder="">
-			</div>
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					*应付（元）
-				</span>
-				<input type="text" class="am-form-field" placeholder="">
-			</div>
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					*实付（元）
-				</span>
-				<input type="text" class="am-form-field" placeholder="">
-			</div>
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					*支付方式
-				</span>
-
-				<div class="radio-con">
-					<!--<label class="am-radio">
+                <div class="radio-con">
+                    <!--<label class="am-radio">
 			      <input type="radio" name="radio1" value="" data-am-ucheck>
 			    	现金
 			    </label>
@@ -167,75 +144,83 @@
 			      <input type="radio" name="radio1" value="" data-am-ucheck checked>
 			      	刷卡
 			    </label>-->
-					<input type="radio" name="way" id="way" value="" />&nbsp;现金
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="radio" name="way" id="way" value="" />&nbsp;刷卡
-				</div>
+                    <input type="radio" name="way" id="way" value="0" ng-model="req.pay_way" checked="checked"/>&nbsp;现付 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="way" id="way" value="1" ng-model="req.pay_way"/>&nbsp;挂账
+                </div>
 
-			</div>
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					*供应商
-				</span>
-				<select data-am-selected>
-					<option value="a">供应商A</option>
-					<option value="b" selected>供应商B</option>
-					<option value="o">供应商C</option>
-					<option value="m">供应商D</option>
-					<option value="d" disabled>供应商E</option>
-				</select>
-			</div>
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					*票据凭证
-				</span>
-				<input type="file" class="am-form-field" placeholder="">
-			</div>
-			<div class="am-input-group">
-				<span class="am-input-group-label">
-					支付凭证
-				</span>
-				<input type="file" class="am-form-field" placeholder="">
-			</div>
-		</div>
+            </div>
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    *供应商
+                </span>
+                <!-- <select data-am-selected>
+                    <option value="a">供应商A</option>
+                    <option value="b" selected>供应商B</option>
+                    <option value="o">供应商C</option>
+                    <option value="m">供应商D</option>
+                    <option value="d" disabled>供应商E</option>
+                </select> -->
+                <select data-am-selected ng-model="req.supplier_id">
+                    <option ng-value="p.supplier_id" ng-bind="p.supplier" ng-repeat="p in rep.supperlist"></option>
+                </select>
+            </div>
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    *票据凭证
+                </span>
+                <input type="file" class="am-form-field" placeholder="">
+            </div>
+            <div class="am-input-group">
+                <span class="am-input-group-label">
+                    支付凭证
+                </span>
+                <input type="file" class="am-form-field" placeholder="">
+            </div>
+        </div>
 
-		<div class="submit">
-			<div class="left-button">
-				<button type="button" class="am-btn am-btn-default am-btn-block" data-am-modal="{target: '#my-prompt'}">
-					<i class="fa fa-reply-all" aria-hidden="true"></i>退单</button>
-			</div>
-			<div class="right-button">
-				<button type="button" class="am-btn am-btn-success am-btn-block">
-					<i class="fa fa-check" aria-hidden="true"></i>提交</button>
-			</div>
-		</div>
-		<div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
-			<div class="am-modal-dialog">
-				<div class="am-modal-hd">退单原因</div>
-				<div class="am-modal-bd am-text-left">
-					<label class="am-checkbox">
-				      <input type="checkbox" value="" data-am-ucheck>派单错误
-				    </label>
-					<label class="am-checkbox">
-				      <input type="checkbox" value="" data-am-ucheck> 供应商缺货
-				    </label>
-					<label class="am-checkbox">
-				      <input type="checkbox" value="" data-am-ucheck> 其他
-				    </label>
-					<textarea name="" rows="" cols=""></textarea>
-				</div>
-				<div class="am-modal-footer">
-					<span class="am-modal-btn" data-am-modal-cancel>取消</span>
-					<span class="am-modal-btn" data-am-modal-confirm>提交</span>
-				</div>
-			</div>
-		</div>
-		<!--[if (gte IE 9)|!(IE)]><!-->
-		<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
-		<!--<![endif]-->
-		<!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
-		<script src="./purchasing_data_record.js"></script>
-	</body>
+        <div class="submit">
+            <div class="left-button">
+                <button type="button" class="am-btn am-btn-default am-btn-block" ng-click="setback()">
+                    <i class="fa fa-reply-all" aria-hidden="true"></i>退单</button>
+            </div>
+            <div class="right-button">
+                <button type="button" class="am-btn am-btn-success am-btn-block" ng-click="submit()">
+                    <i class="fa fa-check" aria-hidden="true"></i>提交</button>
+            </div>
+        </div>
+        <div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">退单原因</div>
+                <div class="am-modal-bd am-text-left">
+                    <label class="am-checkbox" ng-repeat="re in reasonList">
+                        <input type="checkbox" value="re.id" data-am-ucheck name="reason" ng-checked="isSelected(re.id)" ng-click="updateSelection($event,re.id)">
+                        <span ng-bind="re.reason"></span>
+                    </label>
+                    <textarea name="" rows="" cols="" ng-model="state" placeholder="原因补充"></textarea>
+                </div>
+                <div class="am-modal-footer">
+                    <a class="am-modal-btn" data-am-modal-cancel>取消</a>
+                    <a class="am-modal-btn" data-am-modal-confirm ng-click="submitBack()">提交</a>
+                </div>
+            </div>
+        </div>
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+            <div class="am-modal-dialog">
+                <!--<div class="am-modal-hd">Amaze UI</div>-->
+                <div class="am-modal-bd"></div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                    <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                </div>
+            </div>
+        </div>
+        <!--[if (gte IE 9)|!(IE)]><!-->
+        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../bower_components/amazeui/dist/js/amazeui.min.js"></script>
+        <script src="../../bower_components/angular/angular.min.js" charset="utf-8"></script>
+        <!--<![endif]-->
+        <!--[if lte IE 8 ]> <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script> <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script> <script src="assets/js/amazeui.ie8polyfill.min.js"></script> <![endif]-->
+        <script src="./purchasing_data_record.js"></script>
+    </body>
 
 </html>

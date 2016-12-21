@@ -14,9 +14,17 @@
     color: #fff;
 }
 
+
 .title-bg{
 	background-color: rgba(204, 204, 204, 0.61);
 }
 .container-bg{
 	background-color: rgb(245, 245, 245);
+}
+.error{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: red;
+  padding: 10px 0;
 }

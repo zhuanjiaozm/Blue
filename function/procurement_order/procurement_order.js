@@ -27,6 +27,8 @@ app.controller("procurement-order-controller", function($scope, $http) {
             console.error('发生网络错误');
         });
     } else {
+        $('#my-confirm').find('.am-modal-bd').html("获取ask_id异常，请重试！");
+        $('#my-confirm').modal();
         $scope.errMsg = "获取ask_id异常，请重试！";
     }
     $scope.submit = function() {
@@ -40,7 +42,7 @@ app.controller("procurement-order-controller", function($scope, $http) {
                 price_ref: $scope.req.price_ref,
                 supplier_id: $scope.req.supplier_id,
                 notice: $scope.req.notice,
-                need_time:getUrlParam("need_time")
+                need_time: getUrlParam("need_time")
             }
         }).success(function(data, status, headers, config) {
             if (data.statusCode === 200) {

@@ -9,7 +9,7 @@ var app = angular.module('app', [])
         }
         $http({
             method: 'POST',
-            url: basePath + '/implPurchasePlanInfo',
+            url: basePath + '/implorderdetail',
             data: {
                 pch_plan_id: getUrlParam('pch_plan_id')
             }

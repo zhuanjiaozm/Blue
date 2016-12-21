@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+app	/Users/qiaojunjun/workspace/Atom/Blue/function/purchasing_requisition_import/purchasing_requisition_import.js	/^var app = angular.module("app", []);$/;"	variable	line:1
+tab1	/Users/qiaojunjun/workspace/Atom/Blue/function/purchasing_requisition_import/purchasing_requisition_import.js	/^    function tab1() {$/;"	function	line:8
+tab2	/Users/qiaojunjun/workspace/Atom/Blue/function/purchasing_requisition_import/purchasing_requisition_import.js	/^    function tab2() {$/;"	function	line:29
+import	/Users/qiaojunjun/workspace/Atom/Blue/function/purchasing_requisition_import/purchasing_requisition_import.js	/^    $scope.import = function(tempId) {$/;"	function	line:51
+delete	/Users/qiaojunjun/workspace/Atom/Blue/function/purchasing_requisition_import/purchasing_requisition_import.js	/^    $scope.delete = function(tempId) {$/;"	function	line:54
